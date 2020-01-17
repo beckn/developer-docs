@@ -1,39 +1,38 @@
 ---
-title: "Update Trip State"
+title: "Add Travelers - Callback"
 ---
 
-BP receives Trip object with updated State
+Adds travelers to Trip
 
 #### API Endpoint:
 
-    Trip/State/update
+    Trip/Travelers/cb_add
 
 #### Request Structure :
 
 The request structure of a search request consists of a **Header** and **Body**.
 
-The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Trip/State/update"*
+The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Travelers/cb_add"*
 
-The request Body is a [Trip](/Resources/Trip) object with the updated state.
+The request Body is an array [Traveler](/Resources/Trip) objects.
 
 ##### Example Request:
 
 **Header :**
-
 ```json
 {
-  "Action": "Trip/State/update",
+  "Action": "Trip/Travelers/cb_add",
   "Token": "string",
   "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"
 }
 ```
+
 **Body :**
 
 ```json
 {
   "id": "< Unique Trip ID >",
-  "state": "NEW-STATE",
   "travelers" : [
     {
       "profile" : {
@@ -73,27 +72,13 @@ The request Body is a [Trip](/Resources/Trip) object with the updated state.
     "medium": "ROADWAYS",
     "stops": [
       {
-        "location": {
-          "value": "(12.878742,77.999654)",
-          "format": "geocode"
-        },
+        "location": "geocode:(12.878742,77.999654)@coord.(DD.DDDDDD);Vesey Street@name",
         "arrival_time": "2019-09-13T14:31:54+05:30",
         "buffer_time": "60 s",
         "departure_time": "2019-09-13T14:31:54+05:30"
       },
       {
-        "location": {
-          "value": "(12.878742,77.999654)",
-          "format": "geocode"
-        },
-        "buffer_time": "60 s",
-        "departure_time": "2019-09-13T14:31:54+05:30"
-      },
-      {
-        "location": {
-          "value": "(12.878742,77.999654)",
-          "format": "geocode"
-        },
+        "location": "geocode:(12.878742,77.999654)@coord.(DD.DDDDDD);Fulton Street@name",
         "arrival_time": "2019-09-13T14:31:54+05:30"
       }
     ],

@@ -24,7 +24,7 @@ The request Body is a [Trip](/Resources/Trip) object.
 {
   "Action": "Trip/cb_init",
   "Token": "string",
-  "transactio_id" : "string",
+  "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"
 }
 ```

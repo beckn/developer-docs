@@ -1,7 +1,7 @@
 ---
 title: "Beckn App API"
 metaTitle: "Developer Documentation"
-metaDescription: "Beckn Mobility is a set of open specifications and protocols to create a Digital Infrastructure for public good. It enables any application to connect to Mobility Service Providers (like Cab, Bus and Metro Services, EV Charging Stations, Parking Services, Tolls etc) through a network of Gateways."
+metaDescription: "Beckn Mobility is a set of open API specifications that work as an open protocol for integrated mobility."
 ---
 ## Introduction
 

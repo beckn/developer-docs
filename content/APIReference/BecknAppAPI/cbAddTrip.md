@@ -14,7 +14,7 @@ The request structure of a search request consists of a **Header** and **Body**.
 
 The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Journey/Trip/cb_add"*
 
-The request Body is a [Trip](/Resources/Journey) object with the inserted [Trip](/Resources/Trip) object.
+The request Body is a [Journey](/Resources/Journey) object with the inserted [Trip](/Resources/Trip) object.
 
 ##### Example Request:
 
@@ -24,7 +24,7 @@ The request Body is a [Trip](/Resources/Journey) object with the inserted [Trip]
 {
   "Action": "Journey/Trip/cb_add",
   "Token": "string",
-  "transactio_id" : "string",
+  "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"
 }
 ```

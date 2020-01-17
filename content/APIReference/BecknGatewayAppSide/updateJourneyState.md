@@ -24,7 +24,7 @@ The request Body is a [Journey](/Resources/Journey) object with the state update
 {
   "Action": "Journey/State/update",
   "Token": "string",
-  "transactio_id" : "string",
+  "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54",
   "message" : "SUCCESS"
 }

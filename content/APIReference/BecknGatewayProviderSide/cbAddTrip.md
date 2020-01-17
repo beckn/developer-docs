@@ -1,20 +1,20 @@
 ---
-title: "Update Trip State"
+title: "Add Trip - Callback"
 ---
 
-BP receives Trip object with updated State
+Adds a Trip to a Journey
 
 #### API Endpoint:
 
-    Trip/State/update
+    Journey/Trip/cb_add
 
 #### Request Structure :
 
 The request structure of a search request consists of a **Header** and **Body**.
 
-The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Trip/State/update"*
+The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Journey/Trip/cb_add"*
 
-The request Body is a [Trip](/Resources/Trip) object with the updated state.
+The request Body is a  [Trip](/Resources/Trip) object.
 
 ##### Example Request:
 
@@ -22,7 +22,7 @@ The request Body is a [Trip](/Resources/Trip) object with the updated state.
 
 ```json
 {
-  "Action": "Trip/State/update",
+  "Action": "Trip/cb_add",
   "Token": "string",
   "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"
@@ -33,7 +33,7 @@ The request Body is a [Trip](/Resources/Trip) object with the updated state.
 ```json
 {
   "id": "< Unique Trip ID >",
-  "state": "NEW-STATE",
+  "state": "PLAN",
   "travelers" : [
     {
       "profile" : {

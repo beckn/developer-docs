@@ -1,14 +1,12 @@
 ---
-title: "Beckn Gateway Registration API"
+title: "Beckn Provider Registration API"
 metaTitle: "Developer Documentation"
-metaDescription: "Beckn Mobility is a set of open specifications and protocols to create a Digital Infrastructure for public good. It enables any application to connect to Mobility Service Providers (like Cab, Bus and Metro Services, EV Charging Stations, Parking Services, Tolls etc) through a network of Gateways."
+metaDescription: "Beckn Mobility is a set of open API specifications that work as an open protocol for integrated mobility."
 ---
 
-## Overview
+## Introduction
 
-This API is for onboarding Mobility Service Providers otherwise known as **Beckn Providers** or **BPs** on to the Beckn Ecosystem. Examples of Beckn Providers are Cab Services, Metro Services, Bus Services, Vehicle Rental Services and so on. Basically if you are a Provider of Mobility Services with a Beckn Provider API, you can sign up and register your platform with any of the known **Beckn Gateways** or **BGs**. This procss is analogous to registering your domain name with a DNS provider. This endpoint will be cloned across all the BGs within the **Region of Policy Coverage** or **ROPC**, applicable to the Beckn Provider. For example, a Bus Service operating within a particular city will be cloned across all Beckn Gateways registered in that city. Any updation in the Policy will be cloned across all the respective BGs periodically. The **Policy Updation Frequency** or **PUF** can be configured by the city authorities. It is recommended that the PUF should not be less than 24 hours but it is left to the policy makers.
-
-## API Reference
+This API is for registering a Beckn Provider with a Registry
 
 ### 1. Register a Beckn Service Provider
 

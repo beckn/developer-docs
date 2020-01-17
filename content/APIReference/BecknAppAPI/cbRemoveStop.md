@@ -133,9 +133,6 @@ The NACK response body may optionally contain an [Error](/Resources/Error) objec
 
         {}
 
-See [\_cb/Journey/Traveler/add](callback) for the callback response
-.
-
 ##### Example Request:
 
 **Header :**
@@ -144,7 +141,7 @@ See [\_cb/Journey/Traveler/add](callback) for the callback response
 {
   "Action": "Journey/Trip/remove",
   "Token": "string",
-  "transactio_id" : "string",
+  "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Beckn Gateway Provider Side API"
 metaTitle: "Developer Documentation"
-metaDescription: "Beckn Mobility is a set of open specifications and protocols to create a Digital Infrastructure for public good. It enables any application to connect to Mobility Service Providers (like Cab, Bus and Metro Services, EV Charging Stations, Parking Services, Tolls etc) through a network of Gateways."
+metaDescription: "Beckn Mobility is a set of open API specifications that work as an open protocol for integrated mobility."
 ---
 ## Introduction
 
@@ -17,5 +17,5 @@ This API is for connecting **Beckn Gateways** to **Beckn Providers**. The BG wil
 - [Trip/Stop/cb_add](/APIReference/BecknGatewayProviderSide/cbAddStop)
 - [Trip/Stop/cb_remove](/APIReference/BecknGatewayProviderSide/cbRemoveStop)
 - [Trip/State/cb_update](/APIReference/BecknGatewayProviderSide/cbUpdateTripState)
-- [Trip/Traveler/cb_add](/APIReference/BecknGatewayProviderSide/cdAddTravelers)
-- [Traveler/Cred/get](/APIReference/BecknGatewayProviderSide/cbGetTravelersCred)
+- [Trip/Travelers/cb_add](/APIReference/BecknGatewayProviderSide/cbAddTravelers)
+- [Traveler/Cred/get](/APIReference/BecknGatewayProviderSide/getTravelersCred)
