@@ -2,19 +2,19 @@
 title: "Confirm Journey - Callback"
 ---
 
-Callback response to Journey/init. This contains a list of Journeys serviceable by the Beckn Providers.
+Callback response to Journey/confirm.
 
 #### API Endpoint
 
-    Journey/cb_init
+    Journey/cb_confirm
 
 #### Request Structure :
 
 The request structure of a search request consists of a **Header** and **Body**.
 
-The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Journey/cb_search"*
+The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Journey/cb_confirm"*
 
-The request Body is a [Journey](/Resources/Journey) object with the updaed fields.
+The request Body is a [Journey](/Resources/Journey) object with the updated fields and state set to CONFIRM.
 
 ##### Example Request:
 
@@ -22,7 +22,7 @@ The request Body is a [Journey](/Resources/Journey) object with the updaed field
 
 ```json
 {
-  "Action": "Journey/cb_init",
+  "Action": "Journey/cb_confirm",
   "Token": "string",
   "transaction_id" : "string",
   "Timestamp": "2019-09-13T14:31:54"

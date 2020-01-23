@@ -6,5 +6,5 @@ title: Mobility Form
 
 | Key | Type / Class | Definition |
 | --- | ----------------- | ---------- |
-| vehicle | *object* [Vehicle](#)  | Vehicle Details |
+| vehicle | *object* [Vehicle](/Resources/Vehicle)  | Vehicle Details |
 | medium | *string* | Medium of travel |

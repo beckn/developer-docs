@@ -2,11 +2,11 @@
 title: "Add Stop - Callback"
 ---
 
-Callback response to Trip/Stop/Add.
+Callback response to Trip/Stop/add.
 
 #### API Endpoint
 
-    Journey/cb_init
+    Trip/Stop/cb_add
 
 #### Request Structure :
 

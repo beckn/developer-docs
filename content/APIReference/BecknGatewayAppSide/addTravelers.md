@@ -6,13 +6,13 @@ Add travelers to a Trip.
 
 #### API Endpoint:
 
-    /Journey/Travelers/add
+    /Trip/Travelers/add
 
 #### Request Structure :
 
 The request structure of a search request consists of a **Header** and **Body**.
 
-The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Journey/Travelers/add"*
+The request Header is an object of the [Header](/Resources/Header) class. The *Action* field of the Header object will be equal to *"Trip/Travelers/add"*
 
 The request Body is an object of the [Trip](/Resources/Trip) class with the **travelers** field updated with the [Traveler](/Resources/Traveler) object. Please note that modifying any of the other fields (except travelers), should return an error response.
 
