@@ -1,4 +1,4 @@
-# CircleCI GH Pages ployment Config
+# CircleCI GH Pages deployment Config
 version: 2
 jobs:
   build:
