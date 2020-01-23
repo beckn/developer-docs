@@ -2,7 +2,7 @@
 title: Journey
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |

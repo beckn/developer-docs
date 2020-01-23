@@ -2,7 +2,7 @@
 title: MobilityService
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |

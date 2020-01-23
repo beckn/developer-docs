@@ -2,7 +2,7 @@
 title: Trip
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |

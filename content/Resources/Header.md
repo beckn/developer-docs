@@ -2,7 +2,7 @@
 title: Header
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |

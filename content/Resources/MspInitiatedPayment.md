@@ -2,7 +2,7 @@
 title: MSP Initiated Payment
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |

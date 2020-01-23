@@ -2,7 +2,7 @@
 title: Vehicle
 ---
 
-## Definition
+#### Fields
 
 | Property | Type/Class | Definition |
 |----------| ---------- | ---------- |
