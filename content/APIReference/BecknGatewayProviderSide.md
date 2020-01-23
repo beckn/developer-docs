@@ -1,5 +1,5 @@
 ---
-title: "Beckn Gateway Provider Side API"
+title: "Beckn Gateway - Provider API"
 metaTitle: "Developer Documentation"
 metaDescription: "Beckn Mobility is a set of open API specifications that work as an open protocol for integrated mobility."
 ---
