@@ -57,7 +57,7 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
-    "deploy": "gatsby build &&  cp ./src/CNAME public/ && cp ./src/README.md public/  && gh-pages -d public -b master"
+    "deploy": "cp ./src/CNAME public/ && cp ./src/README.md public/ && gh-pages -d public -r https://$GH_TOKEN@github.com/beckn-dev/beckn.github.io.git"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
