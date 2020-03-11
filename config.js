@@ -5,7 +5,7 @@ const config = {
 		"gaTrackingId": null
 	},
 	"header": {
-		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
+		"logo": "https://beckn-branding-public.s3.ap-south-1.amazonaws.com/Beckn-Dot-Slash-Blue.png",
 		"logoLink": "https://developers.beckn.org",
 		"title": "Beckn for Developers",
 		"githubUrl": "https://github.com/beckn/beckn.github.io",
@@ -40,7 +40,7 @@ const config = {
 		"description": "Documentation for developers of the Beckn Ecosystem",
 		"ogImage": null,
 		"docsLocation": "https://github.com/beckn/developer-docs/tree/master/content",
-		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
+		"favicon": "https://beckn-branding-public.s3.ap-south-1.amazonaws.com/Beckn-Dot-Slash-Blue.png"
 	},
 };
 
