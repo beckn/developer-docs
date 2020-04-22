@@ -80,11 +80,11 @@ const Header = ({location}) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
+                  src={"http://test.beckn.org/wp-content/uploads/2020/04/beckn-for-devs.png"}
                   alt={'logo'}
                 />
               </Link>
-              <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
+              {/* <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} /> */}
               <span onClick={myFunction} className={'navBarToggle'}>
                 <span className={'iconBar'}></span>
                 <span className={'iconBar'}></span>
