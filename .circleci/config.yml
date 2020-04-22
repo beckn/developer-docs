@@ -16,7 +16,7 @@ jobs:
             - ./node_modules
       - run:
           name: Gatsby Build
-          command: npm run rebuild
+          command: npm run build
       - run:
           name: Gatsby deploy
           command: npm run deploy
