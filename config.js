@@ -6,9 +6,9 @@ const config = {
 	},
 	"header": {
 		"logo": "https://beckn-branding-public.s3.ap-south-1.amazonaws.com/Beckn-Dot-Slash-Blue.png",
-		"logoLink": "https://developers.beckn.org",
+		"logoLink": "http://test.beckn.org",
 		"title": "Beckn for Developers",
-		"githubUrl": "https://github.com/beckn/beckn.github.io",
+		"githubUrl": "https://github.com/beckn/protocol-specifications",
 		"helpUrl": "",
 		"tweetText": "",
 		"apiVersion": "0.5.3",
@@ -43,7 +43,8 @@ const config = {
 		"description": "Documentation for developers of the Beckn Ecosystem",
 		"ogImage": null,
 		"docsLocation": "https://github.com/beckn/developer-docs/tree/master/content",
-		"favicon": "https://beckn-branding-public.s3.ap-south-1.amazonaws.com/Beckn-Dot-Slash-Blue.png"
+		"favicon": "https://beckn-branding-public.s3.ap-south-1.amazonaws.com/Beckn-Dot-Slash-Blue.png",
+		"logo" : "http://test.beckn.org/wp-content/uploads/2020/04/beckn-logo-e1586981998444.png"
 	},
 };
 

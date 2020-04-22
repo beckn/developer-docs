@@ -58,7 +58,7 @@ const Header = ({location}) => (
         }
         `}
     render={(data) => {
-      const logoImg = require('./images/logo.svg');
+      const logoImg = require('./images/beckn-logo.png');
       const twitter = require('./images/twitter.svg');
       const {
         site: {
@@ -78,9 +78,13 @@ const Header = ({location}) => (
           <nav className={'navbar navbar-default navBarDefault'}>
             <div className={'navbar-header navBarHeader'}>
               <Link to={finalLogoLink} className={'navBarBrand'}>
-                <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
-                &nbsp;- v{config.header.apiVersion}
+                <img
+                  className={'img-responsive displayInline'}
+                  src={logo.image !== '' ? logo.image : logoImg}
+                  alt={'logo'}
+                />
               </Link>
+              <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               <span onClick={myFunction} className={'navBarToggle'}>
                 <span className={'iconBar'}></span>
                 <span className={'iconBar'}></span>

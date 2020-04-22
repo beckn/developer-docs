@@ -230,7 +230,7 @@ a:hover {
   color: #fff !important;
 }
 .headerTitle a {
-  color: #fff;
+  color: #000000;
 }
 
 .headerTitle a:hover {
@@ -253,7 +253,7 @@ a:hover {
 
 /* Header section starts here */
 .navBarDefault {
-  background-color: #372476;
+  background-image: url("http://test.beckn.org/wp-content/uploads/2020/04/beckn-grid-03.png");
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
