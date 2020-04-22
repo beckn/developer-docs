@@ -11,9 +11,9 @@ const config = {
 		"githubUrl": "https://github.com/beckn/beckn.github.io",
 		"helpUrl": "",
 		"tweetText": "",
-		"apiVersion" : "0.5.3",
+		"apiVersion": "0.5.3",
 		"links": [
-			{ "text": "", "link": ""}
+			{ "text": "", "link": "" }
 		],
 		"search": {
 			"enabled": false,
@@ -26,11 +26,14 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-      "/APIReference",
-      "/Resources"
+			"/Core",
+			"/Beckn",
+			"/Mobility",
+			"/FinalMileDelivery",
+			"/FoodAndBeverage",
 		],
 		"links": [
-			{ "text": "Beckn Official Page", "link": "https://beckn.org"},
+			{ "text": "Beckn Official Page", "link": "https://beckn.org" },
 		],
 		"frontline": true,
 		"ignoreIndex": false,
