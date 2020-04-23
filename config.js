@@ -26,16 +26,15 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-			"Core/",
-			"Beckn/",
-			"Mobility/",
-			"FinalMileDelivery/",
-			"FoodAndBeverage/",
+			"/Core",
+			"/Mobility",
+			"/FinalMileDelivery",
+			"/Food and Beverage",
 		],
 		"links": [
 			{ "text": "Beckn Official Page", "link": "https://beckn.org" },
 		],
-		"frontline": true,
+		"frontline": false,
 		"ignoreIndex": false,
 	},
 	"siteMetadata": {
