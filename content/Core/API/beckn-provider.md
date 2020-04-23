@@ -1,7 +1,7 @@
 # Beckn Provider API
 API Spec for Beckn Provider
 
-## Version: 1.0
+## Version: 0.7.1
 
 ### /search
 

@@ -1,9 +1,9 @@
 # Beckn Gateway API
 API Spec for Beckn Gateway
 
-## Version: 0.7.1
+## Version: 0.3.1
 
-### /search
+### /search/fnb_service
 
 #### POST
 ##### Description:
@@ -16,7 +16,7 @@ Search by intent
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /select
+### /select/fnb_service
 
 #### POST
 ##### Description:
@@ -29,7 +29,7 @@ Select the preferred service. This also allows selection of items from the catal
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /confirm
+### /confirm/fnb_service
 
 #### POST
 ##### Description:
@@ -42,7 +42,7 @@ Confirm a Service. Equivalent to checkout operation
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /track
+### /track/fnb_service
 
 #### POST
 ##### Description:
@@ -55,7 +55,7 @@ Track a service or and item
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /cancel
+### /cancel/fnb_service
 
 #### POST
 ##### Description:
@@ -68,7 +68,7 @@ Cancel a Service
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /complete
+### /complete/fnb_service
 
 #### POST
 ##### Description:
@@ -81,7 +81,7 @@ Complete a service
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /add
+### /add/fnb_item
 
 #### POST
 ##### Description:
@@ -94,7 +94,7 @@ Add a runtime object to a collection within a service instance object
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /remove
+### /remove/fnb_item
 
 #### POST
 ##### Description:
@@ -107,7 +107,7 @@ Add a runtime object to a collection within a service instance object
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /update
+### /update/fnb_item
 
 #### POST
 ##### Description:
@@ -120,7 +120,7 @@ Remove object
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_search
+### /on_search/fnb_service
 
 #### POST
 ##### Description:
@@ -133,7 +133,7 @@ Callback response to search
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_select
+### /on_select/fnb_service
 
 #### POST
 ##### Description:
@@ -146,7 +146,7 @@ Callback response to select/service
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_confirm
+### /on_confirm/fnb_service
 
 #### POST
 ##### Description:
@@ -159,7 +159,7 @@ Callback response to confirm/service
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_track
+### /on_track/fnb_service
 
 #### POST
 ##### Description:
@@ -172,7 +172,7 @@ Provide tracking info
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_cancel
+### /on_cancel/fnb_service
 
 #### POST
 ##### Description:
@@ -185,7 +185,7 @@ Response to cancel service
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_add
+### /on_add/fnb_item
 
 #### POST
 ##### Description:
@@ -198,7 +198,7 @@ Returns updated service with added runtime object
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_remove
+### /on_remove/fnb_item
 
 #### POST
 ##### Description:
@@ -211,7 +211,7 @@ Returns updated service with removed runtime object
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /on_update
+### /on_update/fnb_item
 
 #### POST
 ##### Description:

@@ -1,7 +1,7 @@
 # Beckn Gateway API
 API Spec for Beckn Gateway
 
-## Version: 1.0
+## Version: 0.7.1
 
 ### /on_search
 

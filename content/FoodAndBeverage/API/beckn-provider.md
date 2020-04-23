@@ -1,14 +1,14 @@
-# Beckn Gateway API
-API Spec for Beckn Gateway in Mobility Domain
+# Beckn Provider API
+API Spec for Beckn Provider
 
-## Version: 0.7.1
+## Version: 0.3.1
 
-### /search/services
+### /search/fnb_service
 
 #### POST
 ##### Description:
 
-Searches for Services
+Search by intent
 
 ##### Responses
 
@@ -16,7 +16,7 @@ Searches for Services
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /select/service
+### /select/fnb_service
 
 #### POST
 ##### Description:
@@ -29,7 +29,7 @@ Select the preferred service. This also allows selection of items from the catal
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /confirm/service
+### /confirm/fnb_service
 
 #### POST
 ##### Description:
@@ -42,12 +42,12 @@ Confirm a Service. Equivalent to checkout operation
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /track/trip
+### /track/fnb_service
 
 #### POST
 ##### Description:
 
-Track a Trip
+Track a service or and item
 
 ##### Responses
 
@@ -55,12 +55,12 @@ Track a Trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /cancel/Trip
+### /cancel/fnb_service
 
 #### POST
 ##### Description:
 
-Cancel a Trip
+Cancel a Service
 
 ##### Responses
 
@@ -68,12 +68,12 @@ Cancel a Trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /add/traveller
+### /complete/fnb_service
 
 #### POST
 ##### Description:
 
-Select a Service and add items from the service catalog
+Complete a service
 
 ##### Responses
 
@@ -81,12 +81,12 @@ Select a Service and add items from the service catalog
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /remove/traveller
+### /add/fnb_item
 
 #### POST
 ##### Description:
 
-Remove traveller from trip
+Add a runtime object to a collection within a service instance object
 
 ##### Responses
 
@@ -94,12 +94,12 @@ Remove traveller from trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /update/traveller
+### /remove/fnb_item
 
 #### POST
 ##### Description:
 
-Remove traveller from trip
+Add a runtime object to a collection within a service instance object
 
 ##### Responses
 
@@ -107,25 +107,12 @@ Remove traveller from trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /add/stop
+### /update/fnb_item
 
 #### POST
 ##### Description:
 
-Adds a stop to a trip
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
-
-### /remove/stop
-
-#### POST
-##### Description:
-
-Remove a stop from a trip
+Remove object
 
 ##### Responses
 

@@ -1,14 +1,14 @@
 # Beckn Gateway API
-API Spec for Beckn Gateway in Mobility Domain
+API Spec for Beckn Gateway
 
-## Version: 0.7.1
+## Version: 0.3.1
 
-### /search/services
+### /on_search/fnb_service
 
 #### POST
 ##### Description:
 
-Searches for Services
+Callback response to search
 
 ##### Responses
 
@@ -16,12 +16,12 @@ Searches for Services
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /select/service
+### /on_select/fnb_service
 
 #### POST
 ##### Description:
 
-Select the preferred service. This also allows selection of items from the catalog. Equivalent to selecting a service and adding items to cart.
+Callback response to select/service
 
 ##### Responses
 
@@ -29,12 +29,12 @@ Select the preferred service. This also allows selection of items from the catal
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /confirm/service
+### /on_confirm/fnb_service
 
 #### POST
 ##### Description:
 
-Confirm a Service. Equivalent to checkout operation
+Callback response to confirm/service
 
 ##### Responses
 
@@ -42,12 +42,12 @@ Confirm a Service. Equivalent to checkout operation
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /track/trip
+### /on_track/fnb_service
 
 #### POST
 ##### Description:
 
-Track a Trip
+Provide tracking info
 
 ##### Responses
 
@@ -55,12 +55,12 @@ Track a Trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /cancel/Trip
+### /on_cancel/fnb_service
 
 #### POST
 ##### Description:
 
-Cancel a Trip
+Response to cancel service
 
 ##### Responses
 
@@ -68,12 +68,12 @@ Cancel a Trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /add/traveller
+### /on_add/fnb_item
 
 #### POST
 ##### Description:
 
-Select a Service and add items from the service catalog
+Returns updated service with added runtime object
 
 ##### Responses
 
@@ -81,12 +81,12 @@ Select a Service and add items from the service catalog
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /remove/traveller
+### /on_remove/fnb_item
 
 #### POST
 ##### Description:
 
-Remove traveller from trip
+Returns updated service with removed runtime object
 
 ##### Responses
 
@@ -94,38 +94,12 @@ Remove traveller from trip
 | ---- | ----------- |
 | 200 | Acknowledgement of message received |
 
-### /update/traveller
+### /on_update/fnb_item
 
 #### POST
 ##### Description:
 
-Remove traveller from trip
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
-
-### /add/stop
-
-#### POST
-##### Description:
-
-Adds a stop to a trip
-
-##### Responses
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
-
-### /remove/stop
-
-#### POST
-##### Description:
-
-Remove a stop from a trip
+Returns updated service with updated runtime object
 
 ##### Responses
 

@@ -14,7 +14,12 @@ The Beckn Protocol Specification (BPS) defines a standard, technology-agnostic A
 
 # Current Version - 0.7.1
 
-The current version of the beckn protocol specification is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+The current version of the beckn-core protocol specification is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+
+# Current Schema Version - 0.7.1
+
+The current version of the beckn-core Schema is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+
 
 
 # Supported Domains
