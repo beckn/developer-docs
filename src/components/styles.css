@@ -294,7 +294,7 @@ a:hover {
   -webkit-overflow-scrolling: touch;
 }
 .navBarUL li a {
-  color: ##000000 !important;
+  color: #000000 !important;
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
@@ -410,6 +410,10 @@ pre {
   font-weight: 500;
   line-height: 1.5;
   padding: 7px 24px 7px 16px;
+}
+
+.rightSideBarUL li a:hover {
+  color: #fe4640 !important;
 }
 
 .hideFrontLine .collapser {
@@ -970,8 +974,4 @@ img {
 
 .navBarWrapper {
   background-color: #ffffff;
-}
-
-.item {
-  text-transform: ;
 }
