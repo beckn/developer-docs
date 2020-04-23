@@ -12,7 +12,7 @@ const help = require('./images/help.svg');
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
 let searchIndices = [];
-if(isSearchEnabled && config.header.search.indexName) {
+if (isSearchEnabled && config.header.search.indexName) {
   searchIndices.push(
     { name: `${config.header.search.indexName}`, title: `Results`, hitComp: `PageHit` },
   );
@@ -34,7 +34,7 @@ function myFunction() {
   }
 }
 
-const Header = ({location}) => (
+const Header = ({ location }) => (
   <StaticQuery
     query={
       graphql`
@@ -95,41 +95,41 @@ const Header = ({location}) => (
               <div className={'searchWrapper hiddenMobile navBarUL'}>
                 <LoadableComponent collapse={true} indices={searchIndices} />
               </div>
-              ): null}
+            ) : null}
             <div id="navbar" className={'topnav'}>
               <div className={'visibleMobile'}>
                 <Sidebar location={location} />
-                <hr/>
+                <hr />
                 {isSearchEnabled ? (
                   <div className={'searchWrapper'}>
                     <LoadableComponent collapse={true} indices={searchIndices} />
                   </div>
-                  ): null}
+                ) : null}
               </div>
               <ul className={'navBarUL navBarNav navBarULRight'}>
                 {headerLinks.map((link, key) => {
-                  if(link.link !== '' && link.text !== '') {
-                    return(
+                  if (link.link !== '' && link.text !== '') {
+                    return (
                       <li key={key}>
-                        <a className="sidebarLink" href={link.link} target="_blank" rel="noopener" dangerouslySetInnerHTML={{__html: link.text}} />
+                        <a className="sidebarLink" href={link.link} target="_blank" rel="noopener" dangerouslySetInnerHTML={{ __html: link.text }} />
                       </li>
                     );
                   }
                 })}
                 {helpUrl !== '' ?
-                  (<li><a href={helpUrl}><img src={help} alt={'Help icon'}/></a></li>) : null
+                  (<li><a href={helpUrl}><img src={help} alt={'Help icon'} /></a></li>) : null
                 }
                 {(tweetText !== '' || githubUrl !== '') ?
-                  (<li className="divider hiddenMobile"></li>): null
+                  (<li className="divider hiddenMobile"></li>) : null
                 }
                 {tweetText !== '' ?
                   (<li>
                     <a href={'https://twitter.com/intent/tweet?&text=' + tweetText} target="_blank" rel="noopener">
                       <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
                     </a>
-                   </li>) : null
+                  </li>) : null
                 }
-                
+
               </ul>
             </div>
           </nav>

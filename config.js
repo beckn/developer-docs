@@ -12,8 +12,8 @@ const config = {
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-			{ "text": "github", "link": "http://github.com/beckn" },
-			{ "text": "beckn home", "link": "test.beckn.org" }
+			{ "text": "beckn home", "link": "http://test.beckn.org" },
+			{ "text": "github", "link": "https://github.com/beckn/protocol-specifications" }
 		],
 		"search": {
 			"enabled": false,

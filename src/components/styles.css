@@ -40,7 +40,7 @@ html, body {
 
 a {
   transition: color 0.15s;
-  color: #663399;
+  color: #000000;
 }
 
 
@@ -60,6 +60,7 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: #fe4640;
 }
 .displayInline {
   display: inline-block;
@@ -293,13 +294,14 @@ a:hover {
   -webkit-overflow-scrolling: touch;
 }
 .navBarUL li a {
-  color: #fff !important;
+  color: ##000000 !important;
   font-size: 16px;
   font-weight: 500;
   line-height: 1em;
   opacity: 1;
   padding: 10px 15px;
 }
+
 .navBarNav
 {
   display: flex;
