@@ -6,14 +6,14 @@ const config = {
 	},
 	"header": {
 		"logo": "",
-		"logoLink": "http://test.beckn.org",
+		"logoLink": "http://developers.beckn.org",
 		"title": "Beckn for Developers",
 		"githubUrl": "https://github.com/beckn/protocol-specifications",
 		"helpUrl": "",
 		"tweetText": "",
-		"apiVersion": "0.5.3",
 		"links": [
-			{ "text": "", "link": "" }
+			{ "text": "github", "link": "http://github.com/beckn" },
+			{ "text": "beckn home", "link": "test.beckn.org" }
 		],
 		"search": {
 			"enabled": false,
@@ -43,7 +43,7 @@ const config = {
 		"description": "Documentation for developers of the Beckn Ecosystem",
 		"ogImage": null,
 		"docsLocation": "https://github.com/beckn/developer-docs/tree/master/content",
-		"favicon": "",
+		"favicon": "http://test.beckn.org/wp-content/uploads/2020/04/beckn-marker.png",
 		"logo" : ""
 	},
 };
