@@ -26,8 +26,8 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-			"Core/",
 			"Mobility/",
+			"Core/",
 			"FinalMileDelivery/",
 			"Food and Beverage/",
 		],
