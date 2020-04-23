@@ -26,8 +26,8 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-			"Beckn - Core/",
 			"Beckn- Mobility/",
+			"Beckn - Core/",
 			"Beckn - Final Mile Delivery/",
 			"Beckn - Food And Beverage/",
 		],
