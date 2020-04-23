@@ -42,7 +42,7 @@ const config = {
 		"description": "Documentation for developers of the Beckn Ecosystem",
 		"ogImage": null,
 		"docsLocation": "https://github.com/beckn/developer-docs/tree/master/content",
-		"favicon": "http://test.beckn.org/wp-content/uploads/2020/04/beckn-marker.png",
+		"favicon": "https://beckn.org/wp-content/uploads/2020/04/beckn-marker.png",
 		"logo" : ""
 	},
 };
