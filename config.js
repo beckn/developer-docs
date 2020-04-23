@@ -26,10 +26,10 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-			"Mobility/",
-			"Core/",
-			"FinalMileDelivery/",
-			"Food and Beverage/",
+			"Beckn - Core/",
+			"Beckn- Mobility/",
+			"Beckn - Final Mile Delivery/",
+			"Beckn - Food And Beverage/",
 		],
 		"links": [
 			{ "text": "Beckn Official Page", "link": "https://beckn.org" },
