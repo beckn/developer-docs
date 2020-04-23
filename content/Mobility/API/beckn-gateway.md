@@ -10,11 +10,56 @@ API Spec for Beckn Gateway in Mobility Domain
 
 Searches for Services
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Searches for Services",
+        "requestBody": {
+            "description": "Beckn App searches for the Resource using an Intent.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_intent.json"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ### /select/service
 
@@ -23,11 +68,64 @@ Searches for Services
 
 Select the preferred service. This also allows selection of items from the catalog. Equivalent to selecting a service and adding items to cart.
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Select the preferred service. This also allows selection of items from the catalog. Equivalent to selecting a service and adding items to cart.",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/id"
+                                    },
+                                    "catalog" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/catalog"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ### /confirm/service
 
@@ -36,11 +134,64 @@ Select the preferred service. This also allows selection of items from the catal
 
 Confirm a Service. Equivalent to checkout operation
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Confirm a Service. Equivalent to checkout operation",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/id"
+                                    },
+                                    "catalog" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/catalog"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ### /track/trip
 
@@ -48,6 +199,62 @@ Confirm a Service. Equivalent to checkout operation
 ##### Description:
 
 Track a Trip
+
+##### Request
+
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Track a Trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip/properties/id"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ##### Responses
 
@@ -62,11 +269,62 @@ Track a Trip
 
 Cancel a Trip
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Cancel a Trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip/properties/id"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 
 ### /add/traveller
 
@@ -75,11 +333,64 @@ Cancel a Trip
 
 Select a Service and add items from the service catalog
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Select a Service and add items from the service catalog",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip/properties/id"
+                                    },
+                                    "traveller" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/traveller.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ### /remove/traveller
 
@@ -88,11 +399,64 @@ Select a Service and add items from the service catalog
 
 Remove traveller from trip
 
-##### Responses
+##### Request
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | Acknowledgement of message received |
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Remove traveller from trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip/properties/id"
+                                    },
+                                    "traveller" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/traveller.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ### /update/traveller
 
@@ -100,6 +464,65 @@ Remove traveller from trip
 ##### Description:
 
 Remove traveller from trip
+
+##### Request
+
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Remove traveller from trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip/properties/id"
+                                    },
+                                    "traveller" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/traveller.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ##### Responses
 
@@ -114,6 +537,65 @@ Remove traveller from trip
 
 Adds a stop to a trip
 
+##### Request
+
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Adds a stop to a trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/id"
+                                    },
+                                    "stop" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/stop.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -126,6 +608,65 @@ Adds a stop to a trip
 ##### Description:
 
 Remove a stop from a trip
+
+##### Request
+
+```json
+{
+    "post": {
+        "tags": [
+            "Beckn App Facing API"
+        ],
+        "description": "Remove a stop from a trip",
+        "requestBody": {
+            "description": "TODO",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type" : "object",
+                        "properties" : {
+                            "context" : {
+                                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                            },
+                            "message" : {
+                                "type" : "object",
+                                "properties" : {
+                                    "id": {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service/properties/id"
+                                    },
+                                    "stop" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/stop.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "responses": {
+            "200": {
+                "description": "Acknowledgement of message received",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type" : "object",
+                            "properties" : {
+                                "context" : {
+                                    "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                },
+                                "message" : {
+                                    "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 ##### Responses
 
@@ -140,6 +681,60 @@ Remove a stop from a trip
 
 Callback response to search
 
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                    "Beckn Provider Facing API"
+                ],
+                "description": "Callback response to search",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "type" : "array",
+                                        "items" : {
+                                            "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 ##### Responses
 
 | Code | Description |
@@ -152,6 +747,57 @@ Callback response to search
 ##### Description:
 
 Callback response to select/service
+
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                    "Beckn Provider Facing API"
+                ],
+                "description": "Callback response to select/service",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
 
 ##### Responses
 
@@ -166,6 +812,57 @@ Callback response to select/service
 
 Callback response to confirm/service
 
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                    "Beckn Provider Facing API"
+                ],
+                "description": "Callback response to confirm/service",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/mobility_service.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 ##### Responses
 
 | Code | Description |
@@ -178,6 +875,55 @@ Callback response to confirm/service
 ##### Description:
 
 Provide tracking info
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Provide tracking info",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/tracking.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
 
 ##### Responses
 
@@ -192,6 +938,57 @@ Provide tracking info
 
 Response to cancel trip
 
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Response to cancel trip",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 ##### Responses
 
 | Code | Description |
@@ -204,6 +1001,57 @@ Response to cancel trip
 ##### Description:
 
 Returns trip with added traveller
+
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Returns trip with added traveller",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
 
 ##### Responses
 
@@ -218,6 +1066,57 @@ Returns trip with added traveller
 
 Remove traveller from trip
 
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Remove traveller from trip",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 ##### Responses
 
 | Code | Description |
@@ -230,6 +1129,57 @@ Remove traveller from trip
 ##### Description:
 
 Remove traveller from trip
+
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Remove traveller from trip",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
 
 ##### Responses
 
@@ -244,6 +1194,57 @@ Remove traveller from trip
 
 Updated trip with new stop
 
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Updated trip with new stop",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
+
 ##### Responses
 
 | Code | Description |
@@ -256,6 +1257,57 @@ Updated trip with new stop
 ##### Description:
 
 Updated trip with removed stop
+
+##### Request
+
+```json
+{
+            "post": {
+                "tags": [
+                   "Beckn Provider Facing API"
+                ],
+                "description": "Updated trip with removed stop",
+                "requestBody": {
+                    "description": "TODO",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type" : "object",
+                                "properties" : {
+                                    "context" : {
+                                        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                    },
+                                    "message" : {
+                                        "$ref": "http://schema.beckn.org/mobility/schema/0.7.1/trip.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Acknowledgement of message received",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type" : "object",
+                                    "properties" : {
+                                        "context" : {
+                                            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+                                        },
+                                        "message" : {
+                                            "$ref": "http://schema.beckn.org/core/schema/0.7.1/ack.json"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+```
 
 ##### Responses
 
