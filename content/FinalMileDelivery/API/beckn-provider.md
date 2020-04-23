@@ -1,5 +1,5 @@
 # Beckn Provider API
-Beckn Provider API spec inm Final Mile Delivery domain
+Beckn Provider API spec for Final Mile Delivery domain
 
 ## Version: 0.5.1
 

@@ -1,5 +1,5 @@
 # Beckn Gateway API
-API Spec for Beckn Gateway
+API Spec for Beckn App
 
 ## Version: 0.3.1
 

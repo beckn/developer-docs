@@ -1,4 +1,4 @@
-# Beckn Gateway API
+# Beckn App API
 API Spec for Beckn App in Mobility Domain
 
 ## Version: 0.7.1

@@ -1,5 +1,5 @@
-# Beckn Gateway API
-API Spec for Beckn Gateway in Mobility Domain
+# Beckn Provider API
+API Spec for Beckn Provider in Mobility Domain
 
 ## Version: 0.7.1
 
