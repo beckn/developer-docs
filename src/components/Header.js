@@ -80,7 +80,7 @@ const Header = ({ location }) => (
               <Link to={finalLogoLink} className={'navBarBrand'}>
                 <img
                   className={'img-responsive displayInline'}
-                  src={"http://test.beckn.org/wp-content/uploads/2020/04/beckn-for-devs.png"}
+                  src={"https://beckn.org/wp-content/uploads/2020/04/beckn-for-devs.png"}
                   alt={'logo'}
                 />
               </Link>
