@@ -36,7 +36,7 @@ The current maintainers of the beckn protocol are listed below
 
 - [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
 - [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
-- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - ravi@beckn.org
+- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - sujith@beckn.org
 
 # Contributors
 
@@ -44,7 +44,7 @@ The current contributors of the beckn core specifications are listed below
 
 - [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
 - [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
-- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - ravi@beckn.org
+- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - sujith@beckn.org
 
 
 # Licensing
