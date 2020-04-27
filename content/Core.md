@@ -6,7 +6,7 @@ metaDescription: "Beckn is a set of open API specifications that work as an open
 
 # Introduction
 
-![](http://test.beckn.org/wp-content/uploads/2020/04/beckn-marker.png)
+![](https://beckn.org/wp-content/uploads/2020/04/beckn-marker.png)
 
 The Beckn Protocol Specification is an ecosystem-driven open API specification maintained by the [Beckn Foundation](https://test.beckn.org/).
 
