@@ -10,6 +10,18 @@ API Spec for Beckn Gateway
 
 Search by intent
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_intent.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -22,6 +34,18 @@ Search by intent
 ##### Description:
 
 Select the preferred service. This also allows selection of items from the catalog. Equivalent to selecting a service and adding items to cart.
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+    }
+}
+```
 
 ##### Responses
 
@@ -36,6 +60,18 @@ Select the preferred service. This also allows selection of items from the catal
 
 Confirm a Service. Equivalent to checkout operation
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -48,6 +84,18 @@ Confirm a Service. Equivalent to checkout operation
 ##### Description:
 
 Track a service or and item
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+    }
+}
+```
 
 ##### Responses
 
@@ -62,6 +110,18 @@ Track a service or and item
 
 Cancel a Service
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -74,6 +134,18 @@ Cancel a Service
 ##### Description:
 
 Complete a service
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+    }
+}
+```
 
 ##### Responses
 
@@ -88,6 +160,24 @@ Complete a service
 
 Add a runtime object to a collection within a service instance object
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "type" : "object",
+        "service_id" : {
+            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+        },
+        "item_id" : {
+            "$ref" : "http://schema.beckn.org/core/schema/0.7.1/item.json#/properties/id"
+        }
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -99,7 +189,28 @@ Add a runtime object to a collection within a service instance object
 #### POST
 ##### Description:
 
-Add a runtime object to a collection within a service instance object
+Remove a runtime object to a collection within a service instance object
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "type" : "object",
+        "service_id" : {
+            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+        },
+        "item_ids" : {
+            "type" : "array",
+            "items" : {
+                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/item.json#/properties/id"
+            }
+        }
+    }
+}
+```
 
 ##### Responses
 
@@ -112,7 +223,28 @@ Add a runtime object to a collection within a service instance object
 #### POST
 ##### Description:
 
-Remove object
+Update item
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "type" : "object",
+        "service_id" : {
+            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+        },
+        "item_ids" : {
+            "type" : "array",
+            "items" : {
+                "$ref" : "http://schema.beckn.org/core/schema/0.7.1/item.json#/properties/id"
+            }
+        }
+    }
+}
+```
 
 ##### Responses
 
@@ -127,6 +259,21 @@ Remove object
 
 Callback response to search
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "type" : "array",
+        "items" : {
+            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        }
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -139,6 +286,18 @@ Callback response to search
 ##### Description:
 
 Callback response to select/service
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
 
 ##### Responses
 
@@ -153,6 +312,18 @@ Callback response to select/service
 
 Callback response to confirm/service
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -165,6 +336,16 @@ Callback response to confirm/service
 ##### Description:
 
 Provide tracking info
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {}
+}
+```
 
 ##### Responses
 
@@ -179,6 +360,18 @@ Provide tracking info
 
 Response to cancel service
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -191,6 +384,18 @@ Response to cancel service
 ##### Description:
 
 Returns updated service with added runtime object
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
 
 ##### Responses
 
@@ -205,6 +410,18 @@ Returns updated service with added runtime object
 
 Returns updated service with removed runtime object
 
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
+
 ##### Responses
 
 | Code | Description |
@@ -217,6 +434,18 @@ Returns updated service with removed runtime object
 ##### Description:
 
 Returns updated service with updated runtime object
+
+#### Body
+```json
+{
+    "context" : {
+        "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
+    },
+    "message" : {
+        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+    }
+}
+```
 
 ##### Responses
 

@@ -10,6 +10,10 @@ API Spec for Beckn App
 
 Callback response to search
 
+```json
+
+```
+
 ##### Responses
 
 | Code | Description |
