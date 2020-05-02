@@ -6,32 +6,37 @@ metaDescription: "Beckn is a set of open API specifications that work as an open
 
 # Introduction
 
-This specification is an extenstion of the Beckn Core Specification for the Final Mile Delivery Domain.
-
-# Current API Version - 0.3.1
-
-The current version of the beckn-mobility  API specification is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
-
-# Current Schema Version - 0.3.1
-
-The current version of the beckn-mobility schema is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
-
+This specification is an extension of the Beckn Core Specification for the Mobility Domain.
 
 # Maintainers
 
 The current maintainers of the beckn protocol are listed below
 
-- [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
-- [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
-- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - sujith@beckn.org
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
 # Contributors
 
-The current contributors of the beckn core specifications are listed below
+## Version 0.7.1 (Latest)
 
-- [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
-- [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
-- [Sujith Nair](https://www.linkedin.com/in/sujithnairk/) - sujith@beckn.org
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
+| Srikanth Chunduri   | [Framewirk Technologies](https://framewirk.com) | srikanth@framewirk.com |
+
+## Version 0.5.3
+
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
+| Srikanth Chunduri   | [Framewirk Technologies](https://framewirk.com) | srikanth@framewirk.com |
+
 
 
 # Licensing
