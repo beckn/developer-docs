@@ -40,7 +40,6 @@ The current maintainers of the beckn protocol are listed below
 | Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
 
-
 # Supported Domains
 
 The list of supported domains are listed below
