@@ -19,17 +19,20 @@ The current version of the beckn-food and beverage schema is 0.3.1. This specifi
 
 # Maintainers
 
-The current maintainers of the beckn protocol are listed below
+The current maintainers of the beckn - Final Mile Delivery protocol are listed below
 
-- [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
-- [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
 # Contributors
 
-The current contributors of the beckn core specifications are listed below
+## Version 0.3.1 (Latest)
 
-- [Ravi Prakash](https://www.linkedin.com/in/warpcoderavi/) - ravi@beckn.org
-- [Pramod Varma](https://www.linkedin.com/in/pramodkvarma/) - pramod@beckn.org
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
 
 
 # Licensing

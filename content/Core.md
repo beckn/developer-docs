@@ -12,13 +12,32 @@ The Beckn Protocol Specification is an ecosystem-driven open API specification m
 
 The Beckn Protocol Specification (BPS) defines a standard, technology-agnostic API description which allows consumer applications to discover services without requiring access to source code, additional documentation, or perform separate software integration with individual services. When properly defined via OpenAPI, a software application can interpret and transact with remote services with very minimal amount of implementation overhead.
 
-# Current Version - 0.7.1
+# Maintainers
 
-The current version of the beckn-core protocol specification is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+The current maintainers of the beckn protocol are listed below
 
-# Current Schema Version - 0.7.1
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
-The current version of the beckn-core Schema is 0.7.1. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+# Contributors
+
+## Version 0.7.1 (Latest)
+
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
+
+## Version 0.5.3
+
+| Name                | Organization                                    | Email                  |
+|---------------------|-------------------------------------------------|------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
 
 
