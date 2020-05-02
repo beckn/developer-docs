@@ -1,6 +1,6 @@
 ```json
 {
-    "$id": "https://developers.beckn.org/fmd/schema/0.7.1/package.json",
+    "$id": "https://schema.beckn.org/fmd/schema/0.7.1/package.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "version" : "0.7.1",
     "description": "Describes the package object",

@@ -1,12 +1,12 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://developers.beckn.org",
+		"siteUrl": "https://schema.beckn.org",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "",
-		"logoLink": "http://developers.beckn.org",
+		"logoLink": "http://schema.beckn.org",
 		"title": "Beckn for Developers",
 		"githubUrl": "https://github.com/beckn/protocol-specifications",
 		"helpUrl": "",
@@ -26,10 +26,12 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/",
-			"Beckn - Core/",
-			"Beckn - Mobility/",
-			"Beckn - Final Mile Delivery/",
-			"Beckn - Food And Beverage/",
+			"Core",
+			"Mobility",
+			"Final Mile Delivery",
+			"Food And Beverage",
+			"Healthcare"
+			
 		],
 		"links": [
 			{ "text": "Beckn Official Page", "link": "https://beckn.org" },

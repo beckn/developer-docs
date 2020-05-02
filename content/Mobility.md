@@ -1,5 +1,5 @@
 ---
-title: "Beckn - Mobility"
+title: "Mobility"
 metaTitle: "Developer Documentation"
 metaDescription: "Beckn is a set of open API specifications that work as an open protocol for integrated mobility."
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Beckn - Final Mile Delivery"
+title: "Final Mile Delivery"
 metaTitle: "Developer Documentation"
 metaDescription: "Beckn is a set of open API specifications that work as an open protocol for integrated mobility."
 ---

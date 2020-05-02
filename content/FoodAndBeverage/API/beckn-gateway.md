@@ -17,7 +17,7 @@ Search by intent
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_intent.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_intent.json",
     }
 }
 ```
@@ -42,7 +42,7 @@ Select the preferred service. This also allows selection of items from the catal
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
     }
 }
 ```
@@ -67,7 +67,7 @@ Confirm a Service. Equivalent to checkout operation
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
     }
 }
 ```
@@ -92,7 +92,7 @@ Track a service or and item
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
     }
 }
 ```
@@ -117,7 +117,7 @@ Cancel a Service
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
     }
 }
 ```
@@ -142,7 +142,7 @@ Complete a service
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
+        "$ref": "https://schema.beckn.org/food-and-beverage/schema/0.7.1/fnb_service.json",
     }
 }
 ```
@@ -169,7 +169,7 @@ Add a runtime object to a collection within a service instance object
     "message" : {
         "type" : "object",
         "service_id" : {
-            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+            "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json#/properties/id",
         },
         "item_id" : {
             "$ref" : "http://schema.beckn.org/core/schema/0.7.1/item.json#/properties/id"
@@ -200,7 +200,7 @@ Remove a runtime object to a collection within a service instance object
     "message" : {
         "type" : "object",
         "service_id" : {
-            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+            "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json#/properties/id",
         },
         "item_ids" : {
             "type" : "array",
@@ -234,7 +234,7 @@ Update item
     "message" : {
         "type" : "object",
         "service_id" : {
-            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json#/properties/id",
+            "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json#/properties/id",
         },
         "item_ids" : {
             "type" : "array",
@@ -268,7 +268,7 @@ Callback response to search
     "message" : {
         "type" : "array",
         "items" : {
-            "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+            "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
         }
     }
 }
@@ -294,7 +294,7 @@ Callback response to select/service
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```
@@ -319,7 +319,7 @@ Callback response to confirm/service
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```
@@ -367,7 +367,7 @@ Response to cancel service
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```
@@ -392,7 +392,7 @@ Returns updated service with added runtime object
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```
@@ -417,7 +417,7 @@ Returns updated service with removed runtime object
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```
@@ -442,7 +442,7 @@ Returns updated service with updated runtime object
         "$ref" : "http://schema.beckn.org/core/schema/0.7.1/context.json"
     },
     "message" : {
-        "$ref": "https://developers.beckn.org/core/schema/0.7.1/service.json",
+        "$ref": "https://schema.beckn.org/core/schema/0.7.1/service.json",
     }
 }
 ```

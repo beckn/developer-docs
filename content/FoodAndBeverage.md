@@ -1,5 +1,5 @@
 ---
-title: "Beckn - Food and Beverage"
+title: "Food and Beverage"
 metaTitle: "Developer Documentation"
 metaDescription: "Beckn is a set of open API specifications that work as an open protocol for integrated mobility."
 ---
