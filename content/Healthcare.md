@@ -18,9 +18,9 @@ This specification is an extenstion of the beckn Core specification for the Heal
 | Shamik Sharma       | [CureFit](https://www.cure.fit/)                   | shamik@curefit.com         |
 | Gaurav Agarwal      | [1mg](https://www.1mg.com/)                        | gaurava@1mg.com            |
 | Abhinav Lal         | [Practo](https://www.practo.com/)                  | abhinav@practo.com         |
+| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org/)             | ravi@beckn.org             |
 | Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org           |
-| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
 
 
 ## Version 0.1.2
@@ -31,9 +31,9 @@ This specification is an extenstion of the beckn Core specification for the Heal
 | Shamik Sharma       | [CureFit](https://www.cure.fit/)                   | shamik@curefit.com         |
 | Gaurav Agarwal      | [1mg](https://www.1mg.com/)                        | gaurava@1mg.com            |
 | Abhinav Lal         | [Practo](https://www.practo.com/)                  | abhinav@practo.com         |
+| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org/)             | ravi@beckn.org             |
 | Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org           |
-| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
 
 ## Version 0.1.0
 
