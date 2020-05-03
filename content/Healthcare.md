@@ -12,23 +12,38 @@ This specification is an extenstion of the beckn Core specification for the Heal
 
 ## Version 0.5.0 (Latest)
 
-| Name                | Organization                                       | Email                  |
-|---------------------|----------------------------------------------------|------------------------|
-| Ajit Narayanan      | [NovoCura Tech Health Services](https://beckn.org) | ajit@mfine.co          |
-| Ravi Prakash        | [Beckn Foundation](https://beckn.org)              | ravi@beckn.org         |
-| Pramod Varma        | [Beckn Foundation](https://beckn.org)              | pramod@beckn.org       |
+| Name                | Organization                                       | Email                      |
+|---------------------|----------------------------------------------------|----------------------------|
+| Ajit Narayanan      | [mfine](https://www.mfine.co/)                     | ajit@mfine.co              |
+| Shamik Sharma       | [CureFit](https://www.cure.fit/)                   | shamik@curefit.com         |
+| Gaurav Agarwal      | [1mg](https://www.1mg.com/)                        | gaurava@1mg.com            |
+| Abhinav Lal         | [Practo](https://www.practo.com/)                  | abhinav@practo.com         |
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org/)             | ravi@beckn.org             |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org           |
+| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
+
 
 ## Version 0.1.2
 
-| Name                | Organization                                       | Email                  |
-|---------------------|----------------------------------------------------|------------------------|
-| Ajit Narayanan      | [NovoCura Tech Health Services](https://beckn.org) | ajit@mfine.co          |
+| Name                | Organization                                       | Email                      |
+|---------------------|----------------------------------------------------|----------------------------|
+| Ajit Narayanan      | [mfine](https://www.mfine.co/)                     | ajit@mfine.co              |
+| Shamik Sharma       | [CureFit](https://www.cure.fit/)                   | shamik@curefit.com         |
+| Gaurav Agarwal      | [1mg](https://www.1mg.com/)                        | gaurava@1mg.com            |
+| Abhinav Lal         | [Practo](https://www.practo.com/)                  | abhinav@practo.com         |
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org/)             | ravi@beckn.org             |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org           |
+| Siddharth Shetty    | [iSPIRT](https://ispirt.in/)                       | siddharth.shetty@ispirt.in |
 
 ## Version 0.1.0
 
 | Name                | Organization                                       | Email                  |
 |---------------------|----------------------------------------------------|------------------------|
-| Ajit Narayanan      | [NovoCura Tech Health Services](https://beckn.org) | ajit@mfine.co          |
+| Ajit Narayanan      | [mfine](https://www.mfine.co/)                     | ajit@mfine.co          |
+| Shamik Sharma       | [CureFit](https://www.cure.fit/)                   | shamik@curefit.com     |
+| Gaurav Agarwal      | [1mg](https://www.1mg.com/)                        | gaurava@1mg.com        |
+| Abhinav Lal         | [Practo](https://www.practo.com/)                  | abhinav@practo.com     |
+| Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org       |
 
 ## Background
 
