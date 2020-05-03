@@ -6,7 +6,7 @@ metaDescription: "Beckn Mobility is a set of open API specifications that work a
 
 # Introduction
 
-This specification is an extenstion of the beckn Core specification for the Healthcare domain.
+This document is a set of Open API and schema specifications to create an interoperable health services network and activate various services such as Telemedicine, lab testing, consolations, etc. among the network players.
 
 # Contributors
 
@@ -47,7 +47,44 @@ This specification is an extenstion of the beckn Core specification for the Heal
 
 ## Background
 
+India’s Telehealth market today has a few healthcare providers and non-profits providing remote consultations and advice to patients and is in a very early phase of usage and maturity. Market is nascent and has a huge potential to grow to cater to few 100 million users in the coming decade. However, the national scale of the COVID health crisis and the resulting lockdown/social distancing requirements have vastly increased the demand for telemedicine services. In addition, when testing kits are available across the country and offered by public and private players, it is critical that consumers have a common way to discover and book such services.
+
+Via creation of interoperable *Open Health Services Network* along with ability by market players to join the network and creation of an open interoperable network to massively expand the Telehealth and related health provider ecosystem, the current ecosystem will not to scale to meet the demand of the country.
+
 The unified health services network will bring a common set of protocols and APIs to allow health services to be delivered seamlessly across any set of health applications (EUA) and Doctors / Healthcare providers. The stack has two entities and will offer a set of common interfaces ( unified Health interface ) and a gateway ( Health Gateway ), that implements minimal aggregate functions
+
+## Architecture
+
+We propose that an interoperable architecture and open APIs be developed by the community. This document and specifications are created by the community to address this need. These open specifications help unbundle the current end-to-end health services offerings including Telehealth (but not limited to) and expand both sides of the value chain (consumer and provider) of the market akin to BHIM-UPI in the payment space. Proposed architecture in this document allows creation of an interoperable **"Open Health Services Network (OHSN)"** as a common digital infrastructure (a set of open API specifications with a gateway/registry at the center) to allow market players to compete to offer specific sub-services critical to the value chain as per their expertise and focus. 
+
+Open APIs and specifications proposed here allows discovery, search, appointment, modifications, and fulfillment of various health services including Telehealth across the market players on a unified network. This architecture allows OHSN players to seamlessly integrate with both National health Stack as well as India Stack. All players participating in OHSN can also benefit from other critical digital health infrastructure being designed as part of the National Health Stack, such as a public registry of healthcare providers. 
+
+Customers and patients benefit by being able to quickly discover, connect, and use any health provider on the network using their preferred application. They will also benefit with greater availability, lower costs, and higher quality of service across the industry as the sector gets more competitive.
+
+The core technology building block integrates demand-side health services (Telehealth, lab tests, physical consultations, wellness services, etc.) requests with the supply-side health services responses through a set of common APIs proposed here. This is exactly how World Wide Web works today (decoupling of clients with servers using HTTP/HTML). It is enabled through a set of lightweight distributed nodes that simply act as ‘routing gateways' for the search and response flows. 
+
+When a consumer requests for Telehealth consultation services through their consumer interface (henceforth referred to as “Apps”), the Telehealth gateway relays the search request to health care provider platforms (hereafter referred to as “Provider Platforms”). Provider Platforms respond with their intent of servicing that request and other parameters (price, rating, specialization, etc.) offered by various Health Providers within their platform. The Gateway then relay the responses back to the Apps. Gateway also takes care of end point registries, key management, tokenization, etc. Once connected via Search, Apps can connect directly with the Provider Platform without having to go through the gateway.
+
+This specifications address discovery, search, booking, and confirmation of various health services. The architecture proposed here adhere to the following design principles: 
+
+	* Distributing the ability to solve across the ecosystem 
+	* A consumer/patient centric mindset to provide best choice for the user
+	* Incentive alignment of all actors in the ecosystem for sustainability
+	* Distributed architecture but unified via interoperable APIs
+	* Privacy and security by design to ensure end to end security, use of federated consumer identity, and not having a central system recording all transactions. 
+	* Technology & form agnostic architecture to allow users with smartphones, with feature phones, and with no phones to still take advantage via appropriate channels.
+
+### What this architecture is 
+
+	* A set of specifications including a gateway and registry to implement OHSN.
+	* A way to enable various health services through many consumer apps as well as provider platforms all connected via the open architecture.
+	* A minimalistic gateway(s) (notice there can be multiple gateways in future) implementation in the middle allowing end point registries, tokenization, etc.
+	* A way for the Government and market to create a common narrative to expand the use and market
+
+### What this architecture is not 
+	* A central portal or solution by itself or a way to force adoption
+	* A software codebase for one central platform or an application interface
+	* A proprietary or vendor specific solution
 
 
 ## Component 1 : Unified Health Interface
