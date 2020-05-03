@@ -1,7 +1,7 @@
 ---
 title: "Healthcare"
-metaTitle: "Beckn for Developers"
-metaDescription: "Beckn Mobility is a set of open API specifications that work as an open protocol for interoperable services."
+metaTitle: "Beckn Healthcare for Developers"
+metaDescription: "Beckn healthcare is a set of open API specifications for enabling interoperable health services."
 ---
 
 # Introduction
