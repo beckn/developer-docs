@@ -33,7 +33,7 @@ const config = {
 			"Healthcare"
 		],
 		"links": [
-			{ "text": "Beckn Official Page", "link": "https://beckn.org" },
+			{ "text": "Code of sharing", "link": "https://beckn.org/code-of-sharing/" },
 		],
 		"frontline": false,
 		"ignoreIndex": false,
