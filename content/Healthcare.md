@@ -6,7 +6,7 @@ metaDescription: "Beckn Mobility is a set of open API specifications that work a
 
 # Introduction
 
-This document is a set of Open API and schema specifications to create an interoperable health services network and activate various services such as Telemedicine, lab testing, consolations, etc. among the network players.
+This document is a set of Open API and schema specifications to create an interoperable health services network and activate various services such as Telemedicine, lab testing, consolations, etc. among the network players. This document and specifications are created by the healthcare community in collaboration with beckn open protocol team. 
 
 # Contributors
 
