@@ -67,24 +67,24 @@ When a consumer requests for Telehealth consultation services through their cons
 
 This specifications address discovery, search, booking, and confirmation of various health services. The architecture proposed here adhere to the following design principles: 
 
-	* Distributing the ability to solve across the ecosystem 
-	* A consumer/patient centric mindset to provide best choice for the user
-	* Incentive alignment of all actors in the ecosystem for sustainability
-	* Distributed architecture but unified via interoperable APIs
-	* Privacy and security by design to ensure end to end security, use of federated consumer identity, and not having a central system recording all transactions. 
-	* Technology & form agnostic architecture to allow users with smartphones, with feature phones, and with no phones to still take advantage via appropriate channels.
+* Distributing the ability to solve across the ecosystem 
+* A consumer/patient centric mindset to provide best choice for the user
+* Incentive alignment of all actors in the ecosystem for sustainability
+* Distributed architecture but unified via interoperable APIs
+* Privacy and security by design to ensure end to end security, use of federated consumer identity, and not having a central system recording all transactions. 
+* Technology & form agnostic architecture to allow users with smartphones, with feature phones, and with no phones to still take advantage via appropriate channels.
 
 ### What this architecture is 
 
-	* A set of specifications including a gateway and registry to implement OHSN.
-	* A way to enable various health services through many consumer apps as well as provider platforms all connected via the open architecture.
-	* A minimalistic gateway(s) (notice there can be multiple gateways in future) implementation in the middle allowing end point registries, tokenization, etc.
-	* A way for the Government and market to create a common narrative to expand the use and market
+* A set of specifications including a gateway and registry to implement OHSN.
+* A way to enable various health services through many consumer apps as well as provider platforms all connected via the open architecture.
+* A minimalistic gateway(s) (notice there can be multiple gateways in future) implementation in the middle allowing end point registries, tokenization, etc.
+* A way for the Government and market to create a common narrative to expand the use and market
 
 ### What this architecture is not 
-	* A central portal or solution by itself or a way to force adoption
-	* A software codebase for one central platform or an application interface
-	* A proprietary or vendor specific solution
+* A central portal or solution by itself or a way to force adoption
+* A software codebase for one central platform or an application interface
+* A proprietary or vendor specific solution
 
 
 ## Component 1 : Unified Health Interface
