@@ -32,6 +32,8 @@ The current maintainers of the beckn - Final Mile Delivery protocol are listed b
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Srikanth Chunduri   | [Framewirk Technologies](https://framewirk.com) | srikanth@framewirk.com |
 
 # Licensing
 

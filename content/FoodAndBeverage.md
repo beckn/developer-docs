@@ -19,7 +19,7 @@ The current version of the beckn-food and beverage schema is 0.3.1. This specifi
 
 # Maintainers
 
-The current maintainers of the beckn - Final Mile Delivery protocol are listed below
+The current maintainers of the beckn - Food and Beverage protocol are listed below
 
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
@@ -33,6 +33,8 @@ The current maintainers of the beckn - Final Mile Delivery protocol are listed b
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
+| Srikanth Chunduri   | [Framewirk Technologies](https://framewirk.com) | srikanth@framewirk.com |
 
 
 # Licensing

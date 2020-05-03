@@ -1,12 +1,12 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://schema.beckn.org",
+		"siteUrl": "https://developers.beckn.org",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "",
-		"logoLink": "http://schema.beckn.org",
+		"logoLink": "http://developers.beckn.org",
 		"title": "Beckn for Developers",
 		"githubUrl": "https://github.com/beckn/protocol-specifications",
 		"helpUrl": "",
@@ -31,7 +31,6 @@ const config = {
 			"Final Mile Delivery",
 			"Food And Beverage",
 			"Healthcare"
-			
 		],
 		"links": [
 			{ "text": "Beckn Official Page", "link": "https://beckn.org" },
