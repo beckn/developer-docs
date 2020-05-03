@@ -10,6 +10,8 @@ This specification is an extenstion of the beckn Core specification for the Heal
 
 # Contributors
 
+| ![beckn](https://beckn.org/wp-content/uploads/2020/04/beckn-logo-e1586981998444.png) | ![mfine](https://beckn.org/wp-content/uploads/2020/04/beckn-logo-e1586981998444.png) | ![Cure.Fit](https://static.cure.fit/assets/images/curefit-v-man.svg) | ![1mg](https://res.cloudinary.com/du8msdgbj/image/upload/v1571306929/logo_k1p18f.svg) | ![Practo](https://www.practostatic.com/web-assets/images/white_practo_logo.svg) | [iSPIRT](https://ispirt.in/wp-content/themes/ispirt/img/isprit_logo_white.svg) | 
+
 ## Version 0.5.0 (Latest)
 
 | Name                | Organization                                       | Email                      |
