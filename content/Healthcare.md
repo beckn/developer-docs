@@ -12,6 +12,8 @@ This document is a set of Open API and schema specifications to create an intero
 
 ## Version 0.5.0 (Latest)
 
+### Release Date : May 12th, 2020
+
 | Name                | Organization                                       | Email                      |
 |---------------------|----------------------------------------------------|----------------------------|
 | Ajit Narayanan      | [mfine](https://www.mfine.co/)                     | ajit@mfine.co              |
@@ -25,6 +27,8 @@ This document is a set of Open API and schema specifications to create an intero
 
 ## Version 0.1.2
 
+### Release Date : May 2nd, 2020
+
 | Name                | Organization                                       | Email                      |
 |---------------------|----------------------------------------------------|----------------------------|
 | Ajit Narayanan      | [mfine](https://www.mfine.co/)                     | ajit@mfine.co              |
@@ -35,7 +39,7 @@ This document is a set of Open API and schema specifications to create an intero
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org/)             | ravi@beckn.org             |
 | Pramod Varma        | [Beckn Foundation](https://beckn.org/)             | pramod@beckn.org           |
 
-## Version 0.1.0
+## Version 0.1.0 : May 2nd, 2020
 
 | Name                | Organization                                       | Email                  |
 |---------------------|----------------------------------------------------|------------------------|

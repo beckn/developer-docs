@@ -21,6 +21,8 @@ The current maintainers of the beckn protocol are listed below
 
 ## Version 0.7.1 (Latest)
 
+### Release Date : October 30th, 2019
+
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
 | Ravi Prakash        | [Beckn Foundation](https://beckn.org)           | ravi@beckn.org         |
@@ -29,6 +31,8 @@ The current maintainers of the beckn protocol are listed below
 | Srikanth Chunduri   | [Framewirk Technologies](https://framewirk.com) | srikanth@framewirk.com |
 
 ## Version 0.5.3
+
+### Release Date : October 30th, 2019
 
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
