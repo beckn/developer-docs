@@ -1,7 +1,7 @@
 ---
 title: "Healthcare"
 metaTitle: "Developer Documentation"
-metaDescription: "Documentation for developers of the Beckn Ecosystem"
+metaDescription: "Documentation for developers of the Beckn ecosystem"
 ---
 
 # Introduction
