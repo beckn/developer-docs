@@ -1,7 +1,7 @@
 ---
 title: "Core"
 metaTitle: "Developer Documentation"
-metaDescription: "Beckn is a set of open API specifications that work as an open protocol for integrated mobility."
+metaDescription: "Documentation for developers of the Beckn Ecosystem"
 ---
 
 # Introduction

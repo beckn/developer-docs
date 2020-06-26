@@ -1,7 +1,7 @@
 ---
 title: "Healthcare"
-metaTitle: "Beckn Healthcare for Developers"
-metaDescription: "Beckn healthcare is a set of open API specifications for enabling interoperable health services."
+metaTitle: "Developer Documentation"
+metaDescription: "Documentation for developers of the Beckn Ecosystem"
 ---
 
 # Introduction
