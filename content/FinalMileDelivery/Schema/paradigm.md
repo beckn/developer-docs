@@ -1,5 +1,3 @@
-# Paradigm
-
 Describes a paradigm
 
 **Namespace** : fmd

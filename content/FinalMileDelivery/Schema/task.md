@@ -1,5 +1,3 @@
-# FMD Task
-
 A pickup or drop event
 
 **Namespace** : fmd

@@ -1,8 +1,8 @@
-# FMD agent
-
 The agent responsible for fulfillment of an FMD task.
 
 **Namespace** : fmd
+
+**Type** : FmdAgent
 
 ## JSON Schema
 ```json

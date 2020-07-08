@@ -1,5 +1,3 @@
-# Package
-
 Describes the package to be transported
 
 **Namespace** : fmd

@@ -1,5 +1,3 @@
-# Item
-
 Describes an item in a Package
 
 **Namespace** : fmd
