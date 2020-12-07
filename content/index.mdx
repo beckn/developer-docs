@@ -8,11 +8,19 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 
 | Domain                | Version   |    Release Date       |
 |-----------------------|-----------|-----------------------|
-| [Final Mile Delivery](https://developers.beckn.org/FinalMileDelivery)   |  0.7.0    |    06 July, 2020      |
+| [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.1  |    15 November, 2020      |
+| [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.0  |    02 November, 2020      |
+| [Local Retail](https://github.com/beckn/protocol-specifications/tree/fd154368c4670218ce6ad0fc8ee4ada5c401b485/final-mile-delivery/v0)   |  0.1.0  |    15 October, 2020      |
+| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/fd154368c4670218ce6ad0fc8ee4ada5c401b485/final-mile-delivery/v0)   |  0.8.3  |    10 October, 2020      |
+| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/ba54b53aa341d6d0bc0f65633b0a33ff75b628ab/final-mile-delivery/v0)   |  0.8.2  |    21 August, 2020      |
+| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/029496c7e969fc322f654e19ee4ae7299c25fdb5/final-mile-delivery/v0)   |  0.8.1  |    19 August, 2020      | 
+| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/v0)   |  0.8.0    |    10 August, 2020      |
+| [Core](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/v0)   |  0.8.2    |    10 August, 2020      |
+| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/archives/schema/0.7.0)   |  0.7.0    |    06 July, 2020      |
 | [Mobility](https://github.com/beckn/protocol-specifications/tree/master/mobility/schema/0.8.0)   |  0.8.0    |    02 July, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/commits/master/final-mile-delivery/schema/0.6.0)   |  0.6.0    |    02 June, 2020      |
+| Final Mile Delivery   |  0.6.0 (depr)   |    02 June, 2020      |
 | [Food and Beverage](https://github.com/beckn/protocol-specifications/tree/master/food-and-beverage/schema/0.4.0)     |  0.4.0    |    02 June, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/master/final-mile-delivery/schema/0.5.1)   |  0.5.1    |    21 May, 2020       |
+| Final Mile Delivery   |  0.5.1 (depr)    |    21 May, 2020       |
 | [Core](https://github.com/beckn/protocol-specifications/tree/master/core/schema/0.8.0)                  |  0.8.0    |    21 May, 2020       |
 | [Healthcare](https://developers.beckn.org/Healthcare)            |  0.5.0    |    02 May, 2020       |
 | Food and Beverage     |  0.3.1 (depr)    |    22 April, 2020     |
@@ -20,7 +28,26 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 | [Mobility](https://github.com/beckn/protocol-specifications/tree/master/mobility/schema/0.7.1)              |  0.7.1    |    09 December, 2019  |
 | Mobility              |  0.5.3 (depr)   |    30 October, 2019   |
 
+
 ## Introduction
+
+### The current design of the internet
+
+Let’s take a quick look at the current design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP or the CSP. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authorityAll these systems are layered in a neat hourglass structure as shown on the right. 
+
+![](/Images/design-of-the-internet.png)
+
+Now that we have understood the design of our internet, let us look at what Beckn is. 
+
+
+### What is beckn ?
+
+Beckn is a similar set of “open” specifications that allow creation of “open” networks like the “internet”. The difference being that while the TCP/IP protocol is context agnostic, beckn is context aware “by design”. More specifically, beckn is a “commerce context aware” specification meaning that the specification is designed to understand the fundamental nature of commercial transactions at the “application AND network level” rather than just at an “application level” which is what we have nowadays. Meaning, one needs to “Log In” to these applications which “understand” commerce transactions by interpreting the message packets arriving from the network layer. The problem with this approach is that each of these “applications” interpret these packets in their own way, leading to a loss of interoperability between business machines at the network layer. As a result, interoperability between multiple businesses require “bridging interfaces” at the application layer in the form of “platform APIs, deep links, web hooks, embeddable code etc which though possible, are not elegant or scalable solutions at population scale.
+
+![](/Images/what-is-beckn.png)
+
+With the advent of 5G and high speed network technologies, the time is right to move commerce from the application layer to the network and/or transport layer. Furthermore, there are attempts being made to implement beckn specifications in the middleware or firmware in some domains.
+
 
 **Beckn** is an open protocol that allows location-aware, local commerce across industries to be discovered and engaged by any Beckn enabled application. Beckn Protocol helps businesses co-create solutions for the masses seamlessly, by combining services of any form or provider.
 
@@ -32,11 +59,149 @@ Beckn Protocol decouples the demand side digital infrastructure in the form of a
 
 Beckn is a protocol, not a platform. It adopts a decentralized architecture that obviates the need for creating a centralised platform in order to integrate services from multiple providers simultaneously ensuring privacy and security by design by enabling secure, privacy protected iteractions.
 
-Before we discuss the Beckn Protocol specifications, let us take a look at the actors in Beckn.
+### Beckn v/s HTTP - A comparison
 
-## Actors in Beckn
-### Beckn App (BA)
-#### What is a Beckn App ?
+There is a common misconception among many when they hear the word “specification”. What they don’t realise is that the creation of an open network requires implementing multiple layers of infrastructure, each having its own specification. 
+
+This table shows the comparison between HTTP and Beckn Protocol across various factors like methods, scaffolding, infra etc. As you can see, beckn draws a lot of similarities from http. In the following slides, we will be taking a deep dive into each of these layers using relevant examples wherever necessary, to explain how each layer works to create an open network connected using beckn protocol.
+
+Some of these layers have already been designed and implemented across various networks while others are still in development or review phase. 
+
+![](/Images/beckn-vs-http.png)
+
+## Reference Architecture
+In this section we will be looking into the architecture of the beckn ecosystem and the various building blocks that make up this architecture. Furthermore, we will also be taking a quick snapshot of our current partners who are actively or passively involved in implementing beckn protocol.
+
+
+![](/Images/reference-architecture.png)
+
+This diagram shows the architecture of beckn. As you can see, there are multiple layers stacked on top of each other each with clearly defined roles and functions. We will be going into each of these layers in detail in subsequent slides as we go along.
+
+Every entity that wants to be part of the network will find a place in one or more of the layers you see in front of you.
+
+The bottom two layers are the we have the specification, support and the certification layers which provides all the resources and support required to implement the network, test for compliance and get certified to join a network.
+
+The top two we have the actual run-time of the specification in the form of consumer and provider interfaces, server side applications and routing infrastructure.
+
+The middle layer is the underlying infrastructure which actually allows transition of compliant platforms into actual live transacting entities on an open network. This comprises of open registries which list various platforms and their endpoints to be discoverable by other platforms. Kind of like a domain name system.
+
+Each of these layers have their own independent evolution in terms of complexity and scale. Together, all these layers work in tandem to create an ecosystem which we call as “Beckn”.
+
+
+### Ecosystem Building Blocks
+
+This diagram shows various building blocks of the beckn ecosystem in development or in production today.
+
+![](/Images/beckn-ecosystem-building-blocks.png)
+
+The specification block currently has core specifications, domain specific taxonomies, security and trust models and an open certification specification (which is currently under development).
+
+The developer ecosystem is built around some sandboxes, API wrappers (for platforms having their own APIs), multiple communities for various domains like delivery, mobility, local-retail etc; Certification Agencies which implement the open certification spec.
+
+As of today, there are four live communities namely, mobility, fmd, local-retail (fnb, kirana) and healthcare. Out of these, three communities are orchestrated by beckn and one community (healthcare) is being managed by the swasth alliance where beckn is just the spec provider.
+
+Lastly, as a result of these specifications, there are four networks in the works out of which KOMN, ODN are live which use the Mobility and Final Mile Delivery specifications respectively; AND the Local Retail and the OHSN network which respectively use the Local Retail specs and the Healthcare specs are in development phase.
+
+Now I have one more slide which I am going to present before we take a short interval to answer any questions you might have regarding the slides which have discussed. 
+
+
+### Ecosystem Partners
+
+This is a quick snapshot of our various partners which are part of beckn. 
+
+![](/Images/ecosystem-partners.png)
+
+Some of these are tech partners meaning that they are actively involved in the development of the specs, contribute to the evolution of the specs while others are mission partners consisting of consultancy firms, advisory firms, academic institutions and government agencies which assist with various network building missions like KOMN, OHSN.
+
+## Specification and Support Layer
+
+![](/Images/specification-and-support layer.png)
+
+The foundation layer of a beckn network relies on the “Specification and Support Layer” which comprises of five components namely, a set of API Specifications which define the messaging APIs, data standards and communication protocol to be implemented by any platform wanting to be part of the open network. To aid the implementation of these APIs there are,various reference implementations contributed by a network of volunteers comprising of independent software developers, dedicated teams of various firms and subject matter experts. An open developer community has been set up on Slack and Github to exchange ideas, discuss issues and help other developers across the globe to implement these specifications. Occasionally, these communities also conduct weekly/bi-weekly calls, hackathons, business hackathons, schema building exercises.  Apart from that there is a lot of supporting documentation in the form of drafts, rfcs, concept papers and example code to support the implementation of the network. Going further the support layer also comprises of various tools and utilities like sandboxes, test suites and certificate signing request softwares to aid the community to make their systems more robust, secure and compliant with various network rules and policies.
+
+
+### Specification Building Blocks
+
+![](/Images/specification-building-blocks.png)
+
+The primary component of the specification and support  layer is the “Specification” component. It consists of 3 separate layers namely the API specification which defines the various APIs used in a commer transaction. The second layer consists of a set of schemas which are domain agnostic by definition. Basically these are reusable abstract schemas which represent various objects which are used in various commerce transactions. These objects can be further extended to domain specific objects using these taxonomies specific to each each domain. 
+
+
+### Order lifecycle
+
+But before that, let us take a look at the lifecycle of a typical order. Every end-to-end commerce transaction can be categorised into four stages.
+
+![](/Images/order-lifecycle.png)
+
+Stage one is Discovery. This stage involves searching for a provider or a catalog. Once the catalog is retrieved, one can browse the catalog using various filters and params.
+
+Stage two is the Order stage, in this stage, the consumer constructs the order by selecting various items from a catalog, selecting offers; providing billing and shipping details and if necessary, the necessary customer credentials if required. A confirmed order marks the end of stage two.
+
+Stage three is the fulfillment stage where the actual fulfillment of the order takes place. This consists of events like delivery, tracking and occasionally, cancellation. The completion of the delivery of an order marks the end of stage three.
+
+The fourth stage is the post-fulfillment stage where activities like providing rating, contacting support or initiating a return happen. 
+
+Each of these stages contain one or more APIs representing individual events. Let’s take a look at them.
+
+### Transaction APIs
+
+![](/Images/transaction-apis.png)
+
+As mentioned earlier, every stage of the order lifecycle is completed using one or more APIs. Now the interesting thing to note is that while these APIs are transport layer agnostic APIs. Meaning, that they are not specific to HTTP as a transport protocol.  They can just as easily be implemented using any other protocol like UDP, Websockets etc. But, since HTTP is more popular among the transport protocols, we will be using HTTP to describe our examples. Another important point to note is that these APIs are Server to Server APIs; meaning that these APIs are not directly called by a UI client like a mobile phone, browser, smart devices etc. This gives enormous flexibility to the implementer to customize his experience in however way he wants it to be. For example, a single search request from a mobile app to a server might result in multiple API calls from the server to the network. We will look into these use cases as we go along.
+
+There is one more very important thing to observe here is that each API interaction along this funnel is asynchronous. Meaning, every request is not followed by an immediate response in the same session. In fact, a response may take even days to after the request was generated. For example, when you’re booking a hotel during peak season, a booking request doesn’t necessarily mean that your hotel has confirmed the booking. It may take upto 24 hours for the confirmation to happen. Hence the async nature of these APIs. In fact if you really think about it, all real world transactions between one or more parties are actually asynchronous. Even talking for example, a person talking to another person still waits for a feedback or an acknowledgement from the other person at the end of a sentence. In the same way, every request is immediately responded to with an ACK and then the receiver will call back the requester with an appropriate response. 
+
+So, these APIs emulate a typical order funnel i.e from search to confirm to track to rating. One last point before we move on is that these APIs don’t necessarily need to be called in order every time. I mean that there are use cases where one may call the confirm API directly without going through the search, select and init.
+
+### Support APIs
+
+![](/Images/supporting-apis.png)
+
+Apart from the transaction APIs, there are also some supporting APIs which don’t necessarily need to be called every time. These data returned in these APIs are generally meant to be cached by the requester. Furthermore, some of these APIs are synchronous APIs, meaning that they don’t have a callback mechanism. These APIs generally get their response immediately in the same session.
+
+### Core Schema
+Now that we know what type of interactions happen between platforms on the network, let us look into how the data is structured in these interactions. The definition of these objects are represented in a structured schema for documentation and validation purposes using the Open API Specification 3.0.
+
+![](/Images/core-schema.png)
+
+As you can see, there is a neat hierarchical structure of data that is passed in each of these APIs. The top layer is a set of highly abstracted classes which form the main message being passed in each API. As we move inwards towards the mid level schema, the detailing of each of these objects increases by using a set of schemas which define various properties of the top level schemas. Further down we have set of primitive schema which are reusable objects which define various dimensions of mid level schemas. To explain further, a  location may mean a single gps coordinate, an address, an area or a 3d space. Depending on context, the location schema may be used in a various places. For example, A fulfillment object may have a location attribute which may define the delivery area whereas a provider may have a location attribute which could indicate the location of a store. 
+
+The last two layers represent the primitive data-types and universal standards which are used by all platform entities. This makes for lesser communication overhead while parsing messages. Together, these five layers form the core schema which forms the data abstraction layer for the APIs. 
+
+
+### Taxonomies
+Now it is obvious that all use cases cannot be represented using just abstracted objects. There has to be some domain level context to each of these objects which define the actual function of these objects. That variance across domains is defined using taxonomies. These define domain specific attributes to core schema elements. 
+
+![](/Images/taxonomies.png)
+
+There is a particular nomenclature to these taxonomies which is constructed out of a hierarchical layering of scopes namely domain, country, city and network. Every domain specific attribute has a set of supported values that can be defined at the country level, city level or at a network level. The list of supported values for each attribute can be listed on a public domain like a website or in the form or an API specific to a city or a network. For example, New Delhi supports a mode of travel called e-Rickshaws whereas Bangalore does not. So the list of supported modes in delhi or bangalore will be present as a file in the protocol specifications repository which anyone can access and implement. This list will continuously get updated as new modes keep coming along. We’ll see how these taxonomies get used in API calls when we look at the examples. 
+
+
+### Specification Evolution
+Lastly, let us look at the evolution of the specification. Beckn specification is represented as a set of documents which are continuously reviewed and updated. Since it is a community contributed protocol, the evolution of the specification is also dependent on the community. To enable that, the foundation has provided various channels to discuss and collaborate about various issues in the spec and finally release a draft version of the specification. This draft undergoes a set of peer reviews and is finally released as a new version. This new version will have a migration cycle which will be communicated to all implementers via github and slack channels and then the implementers can choose to migrate to the new version. The versioning scheme which is used is the semver 2.0.0. 
+
+![](/Images/specification-evolution.png)
+
+## Network and Transaction Layer
+
+![](/Images/network-layer-architecture.png)
+
+Before we look at the certification and infrastructure layers, let us take a look at the network layer where all the transactions happen. As you can see the network layer is itself composed of three separate layers namely, 
+
+The demand layer -  containing consumer facing platforms called BAPs or Beckn App Platforms.
+
+The routing layer which consist of Beckn Gateways or BGs and,
+
+The Supply layer which consist of Seller facing platforms called BPPs or Beckn Provider Platforms. Now let us look at each of these layers in slightly more detail and see how a transaction happens in this layer.
+
+
+### Network Actors
+
+#### Beckn App Platforms (BAP) : 
+
+The BAP or Beckn App Platform is a server side infrastructure which captures consumer demand via its UI applications, converts them into beckn compliant schema and APIs at the server side and fires them at the network. They are the initiators of the transactions and have the flexibility to communicate with multiple networks and integrate the responses from those networks into a bundled experience. For example, a BAP can book a cab via the mobility network, order a coffee from a restaurant via the local-retail network, have it picked up via an order on the delivery network and get it delivered on the way to work. All these three services can be bundled at the server end and packaged into a single experience to the user via an option on the app called “Get coffee delivered on the way to work”. Or a BAP can bundle multiple modes of transport to get from one place to the other to give a multi-modal journey to a user. For example, a BAP application can provide a Cab + Metro + Auto ride, all in the same booking. 
+
+![](/Images/BecknApp.png)
 
 Beckn Apps are software application providers who intend to offer integrated services to the consumer. This refers to any software platform which has a consumer interface. Possible examples of BA User Interfaces are,
 
@@ -56,17 +221,38 @@ A Beckn App includes,
 2. The consumer user interface
 3. The application cloud
 
-A BA could be illustrated as below.
-
-![](/Images/BecknApp.png)
-
 #### Who can set up a BA ?
 Any organization which intends to offer integrated, location-aware services to consumers.
 
 #### How to implement the Beckn App API ?
 The Beckn App API can be implemented using the specifications defined [here](/Core/API).
 
-### Beckn Gateway (BG)
+### Beckn Provider Platforms (BPP):
+On the other side of the network is the supply layer which consists of the BPP. This is the platform which implements the supply logic and represents it in the form of a Provider Catalog. The BPP can be a single provider with a Beckn API implementation or an aggregator of merchants depending upon the logic of implementation. 
+
+![](/Images/BecknProvider.png)
+
+A Beckn Provider includes,
+
+1. An API to accept requests from BGs as part of the application cloud. This API will henceforth be referred to as the Beckn Provider API.
+2. An application cloud to store inventory data
+3. An user interface for service personnel. This is optional and may not be required for all cases. For example, a bike rental might not require a user interface whereas a cab service may require a Driver app.
+
+#### Who can become a Beckn Provider ?
+Any organization who owns, operates or manages location-aware, capacity-limited and time-limited inventory of services can become a Beckn Provider. They may require to be registered with the city authorities and are regulated by them. Possible examples of BPs are,
+
+1. Mass transit companies like metro services, bus services, ride hailing services
+2. Restaurants
+3. Final-mile delivery services for food & grocery
+
+#### How to implement the Beckn Provider API ?
+The Beckn Provider API can be implemented using the specifications defined [here](/Core/API).
+
+### Beckn Gateways (BG):
+In the middle, we have the Beckn Gateways, which form the routing layer infra. The BGs are extremely lean and stateless routing servers. The purpose of this layer is to route requests from the BAP to the BPP and from the BPP back to the BAP. The BG takes a request from the BAP, determines which BPPs does the message need to forwarded to and multicasts the message to the same. Apart from that, it can also implement optional features like payments, registry services and can also emit open data. The open data specification in beckn is currently under development and will be released in due course of time. 
+
+![](/Images/beckn-gateways-new.png)
+
 #### What is a Beckn Gateway ?
 
 A Beckn Gateway (BG) refers to an organization which offers the following functionalities.
@@ -85,10 +271,6 @@ A BG includes,
 3. It validates and filters all requests based on local governance policies
 4. It can also optionally collect  payments from the BA users, and settle with Beckn Providers through a clearing process
 
-A Beckn Gateway could be illustrated as below.
-
-![](/Images/BecknGateway.png)
-
 #### Who can setup the Beckn Gateway ?
 
 Any organization with infrastructure to provide the above functionalities preferably organizations who own infrastructure with high compute capability. This organization could be a regulated entity registered with the city authorities.
@@ -97,61 +279,91 @@ Any organization with infrastructure to provide the above functionalities prefer
 
 The Beckn Gateway APIs can be implemented using the specifications defined [here](/Core/API).
 
-### Beckn Provider (BP)
-#### What is a Beckn Provider ?
-A Beckn Provider is an organization that owns or operates or manages one or more location-aware businesses, delivering services such as mobility, food & grocery delivery, healthcare to consumers
+### API Communication
 
-
-#### What components does a Beckn Provider include ?
-A Beckn Provider includes,
-
-1. An API to accept requests from BGs as part of the application cloud. This API will henceforth be referred to as the Beckn Provider API.
-2. An application cloud to store inventory data
-3. An user interface for service personnel. This is optional and may not be required for all cases. For example, a bike rental might not require a user interface whereas a cab service may require a Driver app.
-
-A Beckn Provider could be illustrated as below.
-
-![](/Images/BecknProvider.png)
-
-#### Who can become a Beckn Provider ?
-Any organization who owns, operates or manages location-aware, capacity-limited and time-limited inventory of services can become a Beckn Provider. They may require to be registered with the city authorities and are regulated by them. Possible examples of BPs are,
-
-1. Mass transit companies like metro services, bus services, ride hailing services
-2. Restaurants
-3. Final-mile delivery services for food & grocery
-
-#### How to implement the Beckn Provider API ?
-The Beckn Provider API can be implemented using the specifications defined [here](/Core/API).
-
-## Beckn Ecosystem Architecture
-
-To activate Beckn Protocol, the beckn ecosystem must be organized according to the architecture specifications as listed below. The architecture of a Beckn ecosystem is illustrated below,
-
-![](/Images/PublicDigitalInfrastructure.png)
-
-In addition to the APIs mentioned above, Beckn Protocol allows city authorities to implement a Policy API for applying smart dynamic policies across the ecosystem if needed. The city authorities can also implement a Registration API for registering Beckn ecosystem participants (BPs, and/or BGs and/or BAs) if needed.
-
-## Communication Protocol
-
-All messages between BAs and BPs will be routed through the BG. All request messages will be non-blocking and will be immediately acknowledged with an “ACK” or a “NACK” message in the same session.
+All transaction APIs will be directly between a BAP and the BPP with the exception of search. All request messages will be non-blocking and will be immediately acknowledged with an “ACK” or a “NACK” message in the same session.
 
 The response message will be in the form of a callback. Each callback should also be immediately responded to with an “ACK” or a “NACK” message in the same callback session.
 
 All messages exchanged will be serialised in JSON.
 
-Depending on the nature of the message, the BG may broadcast the message coming from the BA to all the BPs or one specific BP.
+Exception: Real time tracking data will not be routed through the Beckn Networks. As tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BP and the BA like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
 
-Exception: Real time vehicle tracking data will not be routed through the Beckn Gateway. As vehicle tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BP and the BA like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
+![](/Images/api-communication.png)
 
-The communication protocol can be visualized using the sequence diagram shown below.
+### Network Topologies
 
-**Example : Search request from a BA to BP**
+Beckn enabled networks can be arranged in various configurations depending on the nature of integration of business cases. For example, in a situation where a customer wants to get food delivered to their home, there are two networks which are accessed namely,
 
-![](/Images/ExampleDataFlow-Search.png)
+- The Local Retail Network : For placing the order for food and,
+- The Final Mile Delivery Network : For picking up the food package from the restaurant and delivering it to the customer
 
-Taking an example from the  mobility domain, the following events occur,
+One way to fulfill this use case is for the customer facing BAP to use the Local Retail network to order food while parallely accessing the final mile delivery network and place a delivery request as shown below,
 
-1. The BA requests BG to return journeys matching a specific intent using the *Journey/search* message. BG responds immediately with an ACK message.
-2. BG broadcasts the *Trip/search* message to all the relevant BPs. All BPs respond immediately with the *ACK* messages.
-3. BPs will return relevant Trips to BG using a *Trip/cb_search* callback message. BG immediately responds to BPs with the *ACK* message
-4. BG performs Journey optimization  the Trips and returns the Journeys to the BA using the *Journey/cb_search* message. BA immediately responds with *ACK*.
+![](/Images/parallel-networks.png)
+
+Alternatively, The Local Retail BPP may act as a BAP and place the delivery request to the Final Mile Delivery Network in a cascaded manner as shown below.
+
+![](/Images/cascaded-networks.png)
+
+## Certification Layer
+
+![](/Images/certification-layer-architecture.png)
+
+Certification is a process for any network participant to show proof of compliance towards any network. This proof of complicane is in the form of a digital certitificate issued by one or more certification agencies. This certificate is then uploaded to a network registrar which validates the certificate against the network rules and policies which exist at the network level, city level, country level and/or at a global level.
+
+Once the certificate is valid, the Registrar makes an entry against that participant in an open registry. Any network participant listed on an open registry is implicitly assumed to be certified.
+
+### Certification Process
+
+![](/Images/certification-process.png)
+
+Below is an illustration of an example digital certificate issued by a certification agency. These certifications could be for various purposes for example,
+
+![](/Images/example-certificate.png)
+
+- Compliance Certificate
+- Migration Certificate
+- Compliance Renewal Certificate
+
+The certification agencies might create multiple certificates like above to manage compliance across networks.
+
+## Infrastructure and Security Layer
+
+![](/Images/infrastructure-and-security-layer.png)
+
+This layer consists of a network of open registries which store the details of every network participants. To get listed on a registry there is a rite of passage which every participant must go through as shown below. The various actors in the infrastructure layer are,
+
+###  Registry
+
+- Contains a database table containing a list of BAPs, BPPs, BGs or any other platform communicating on an open network  
+- It implements the subscribe API
+
+### Network Registrar
+
+- A trusted entity which hosts the Registry
+- It can be formed by the participants of a network or a public authority depending on the network 
+
+### Registrant
+
+- Any company who wants its platform to be listed on a open Registry is called a Registrant
+- To be listed he registrant needs to submit relevant “Cred” to the Network Registrar
+- A Registrant can be a BAP, BPP or BG
+
+### Subscriber
+
+- Once the platform gets approved by the registrar, it gets listed on the registry with the status as “INITIATED”
+- A platform which gets approved and added to the registry by the Network Registrar becomes is called a Subscriber
+- Implements the on_subscribe API
+
+![](/Images/subscription-process.png)
+
+Once the registration is complete, the registry makes an entry of the registrant in its database as shown below.
+
+![](/Images/registry-entry.png)
+
+Any receiver of an API request must authenticate the sender by looking up this registry and verify the signature of the sender using the sender's public key.
+
+
+
+
