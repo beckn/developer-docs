@@ -33,7 +33,7 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 
 ### Taking inspiration from the current design of the internet
 
-Let’s take a quick look at the current design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP or the CSP. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authorityAll these systems are layered in a neat hourglass structure as shown on the right. 
+Let’s take a quick look at the current design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authorityAll these systems are layered in a neat hourglass structure as shown on the right. 
 
 ![](/Images/design-of-the-internet.png)
 
@@ -68,6 +68,7 @@ This table shows the comparison between HTTP and Beckn Protocol across various f
 Some of these layers have already been designed and implemented across various networks while others are still in development or review phase. 
 
 ![](/Images/beckn-vs-http-1.png)
+<center style="font-size:10px">*Under development or in draft stage</center>
 
 ## Reference Architecture
 In this section we will be looking into the architecture of the beckn ecosystem and the various building blocks that make up this architecture. Furthermore, we will also be taking a quick snapshot of our current partners who are actively or passively involved in implementing beckn protocol.
@@ -79,11 +80,11 @@ This diagram shows the architecture of beckn. As you can see, there are multiple
 
 Every entity that wants to be part of the network will find a place in one or more of the layers you see in front of you.
 
-The bottom two layers are the we have the specification, support and the certification layers which provides all the resources and support required to implement the network, test for compliance and get certified to join a network.
+The bottom two layers are the *Specification & Support* and the *Certification* layers which provides all the resources and support required to implement the network, test for compliance and get certified to join a network.
 
-The top two we have the actual run-time of the specification in the form of consumer and provider interfaces, server side applications and routing infrastructure.
+In the top two layers, we have the actual run-time of the specification in the form of the Application Layer which constitute the consumer and provider interfaces and the Network and Transaction layer which have the server side applications and routing infrastructure.
 
-The middle layer is the underlying infrastructure which actually allows transition of compliant platforms into actual live transacting entities on an open network. This comprises of open registries which list various platforms and their endpoints to be discoverable by other platforms. Kind of like a domain name system.
+In the middle, we have the "Infrastructure and Security" layer which is the underlying infrastructure which actually allows transition of beckn compliant platforms into actual live transacting entities on an open network. This comprises of open registries which list various platforms and their endpoints to be discoverable by other platforms. Kind of like a domain name system.
 
 Each of these layers have their own independent evolution in terms of complexity and scale. Together, all these layers work in tandem to create an ecosystem which we call as “Beckn”.
 
@@ -93,14 +94,15 @@ Each of these layers have their own independent evolution in terms of complexity
 This diagram shows various building blocks of the beckn ecosystem in development or in production today.
 
 ![](/Images/ecosystem-building-blocks-new.png)
+<center style="font-size:10px">*Under development or in draft stage</center>
 
 The specification block currently has core specifications, domain specific taxonomies, security and trust models and an open certification specification (which is currently under development).
 
 The developer ecosystem is built around some sandboxes, API wrappers (for platforms having their own APIs), multiple communities for various domains like delivery, mobility, local-retail etc; Certification Agencies which implement the open certification spec.
 
-As of today, there are four live communities namely, mobility, fmd, local-retail (fnb, kirana) and healthcare. Out of these, three communities are orchestrated by beckn and one community (healthcare) is being managed by the swasth alliance where beckn is just the spec provider.
+As of today, there are four live communities namely, Mobility, Final Mile Delivery, Local Retail (Food & Beverages, Daily Grocery, Local Pharmacy, Mom & Pop shops etc) and Healthcare. Out of these, three communities are orchestrated by Beckn and one community (healthcare) is being managed by the Swasth Alliance where beckn is just the spec provider.
 
-Lastly, as a result of these specifications, there are four networks in the works out of which KOMN, ODN are live which use the Mobility and Final Mile Delivery specifications respectively; AND the Local Retail and the OHSN network which respectively use the Local Retail specs and the Healthcare specs are in development phase.
+Lastly, as a result of these specifications, there are four networks in the works out of which Kochi Open Mobility Network(KOMN), and the Open Delivery Network (ODN) are live which use the Mobility and Final Mile Delivery specifications respectively; AND the Local Retail Network (LRN) and the Open Health Services Network(OHSN) which respectively use the Local Retail specifications and the Healthcare specifications are in development phase.
 
 ## Specification and Support Layer
 
