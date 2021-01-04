@@ -12,6 +12,7 @@ The Beckn Protocol Specification is an ecosystem-driven open API specification m
 
 The Beckn Protocol Specification (BPS) defines a standard, technology-agnostic API description which allows consumer applications to discover services without requiring access to source code, additional documentation, or perform separate software integration with individual services. When properly defined via OpenAPI, a software application can interpret and transact with remote services with very minimal amount of implementation overhead.
 
+
 # Maintainers
 
 The current maintainers of the beckn protocol are listed below

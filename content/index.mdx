@@ -4,36 +4,12 @@ metaTitle: "Beckn for Developers"
 metaDescription: "Documentation for developers of the Beckn ecosystem"
 ---
 
-## Release History
-
-| Domain                | Version   |    Release Date       |
-|-----------------------|-----------|-----------------------|
-| [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.1  |    15 November, 2020      |
-| [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.0  |    02 November, 2020      |
-| [Local Retail](https://github.com/beckn/protocol-specifications/tree/fd154368c4670218ce6ad0fc8ee4ada5c401b485/final-mile-delivery/v0)   |  0.1.0  |    15 October, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/fd154368c4670218ce6ad0fc8ee4ada5c401b485/final-mile-delivery/v0)   |  0.8.3  |    10 October, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/ba54b53aa341d6d0bc0f65633b0a33ff75b628ab/final-mile-delivery/v0)   |  0.8.2  |    21 August, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/029496c7e969fc322f654e19ee4ae7299c25fdb5/final-mile-delivery/v0)   |  0.8.1  |    19 August, 2020      | 
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/v0)   |  0.8.0    |    10 August, 2020      |
-| [Core](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/v0)   |  0.8.2    |    10 August, 2020      |
-| [Final Mile Delivery](https://github.com/beckn/protocol-specifications/tree/83006c82ae1f7069f6b609211245e651d21d90ab/final-mile-delivery/archives/schema/0.7.0)   |  0.7.0    |    06 July, 2020      |
-| [Mobility](https://github.com/beckn/protocol-specifications/tree/master/mobility/schema/0.8.0)   |  0.8.0    |    02 July, 2020      |
-| Final Mile Delivery   |  0.6.0 (depr)   |    02 June, 2020      |
-| [Food and Beverage](https://github.com/beckn/protocol-specifications/tree/master/food-and-beverage/schema/0.4.0)     |  0.4.0    |    02 June, 2020      |
-| Final Mile Delivery   |  0.5.1 (depr)    |    21 May, 2020       |
-| [Core](https://github.com/beckn/protocol-specifications/tree/master/core/schema/0.8.0)                  |  0.8.0    |    21 May, 2020       |
-| [Healthcare](https://developers.beckn.org/Healthcare)            |  0.5.0    |    02 May, 2020       |
-| Food and Beverage     |  0.3.1 (depr)    |    22 April, 2020     |
-| [Core](https://github.com/beckn/protocol-specifications/tree/master/core/schema/0.7.1)                  |  0.7.1    |    17 April, 2020     |
-| [Mobility](https://github.com/beckn/protocol-specifications/tree/master/mobility/schema/0.7.1)              |  0.7.1    |    09 December, 2019  |
-| Mobility              |  0.5.3 (depr)   |    30 October, 2019   |
-
 
 ## Introduction
 
-### Taking inspiration from the current design of the internet
+### Taking inspiration from the design of the internet
 
-Let’s take a quick look at the current design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authorityAll these systems are layered in a neat hourglass structure as shown on the right. 
+Let’s take a quick look at the design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authority. All these systems are layered in a neat hourglass structure as shown on the right. 
 
 ![](/Images/design-of-the-internet.png)
 
@@ -48,8 +24,7 @@ Beckn is a similar set of “open” specifications that allow creation of “op
 
 With the advent of 5G and high speed network technologies, the time is right to move commerce from the application layer to the network and/or transport layer. Furthermore, there are attempts being made to implement beckn specifications in the middleware or firmware in some domains.
 
-
-**Beckn** is an open protocol that allows location-aware, local commerce across industries to be discovered and engaged by any Beckn enabled application. Beckn Protocol helps businesses co-create solutions for the masses seamlessly, by combining services of any form or provider.
+**Beckn** is an open protocol that allows location-aware, local commerce across industries to be discovered and engaged by any consumer application. It helps businesses co-create solutions for the masses seamlessly, by combining services of any form or provider.
 
 **Beckn Protocol** is a collection of open specifications consisting of protocol APIs, message formats, network design and reference algorithms to allow multiple commercial service provider entities to bring their services together to offer one seamless integrated experience to their customers. The interoperability protocol essentially allows two entities in an integrated ecosystem to communicate with each other through structured flows and role definitions.
 
@@ -71,7 +46,7 @@ Some of these layers have already been designed and implemented across various n
 <center style="font-size:10px">*Under development or in draft stage</center>
 
 ## Reference Architecture
-In this section we will be looking into the architecture of the beckn ecosystem and the various building blocks that make up this architecture. Furthermore, we will also be taking a quick snapshot of our current partners who are actively or passively involved in implementing beckn protocol.
+In this section we will be looking into the architecture of the beckn ecosystem and the various building blocks that make up this architecture. 
 
 
 ![](/Images/reference-architecture.png)
@@ -165,8 +140,7 @@ Now it is obvious that all use cases cannot be represented using just abstracted
 
 ![](/Images/taxonomies.png)
 
-There is a particular nomenclature to these taxonomies which is constructed out of a hierarchical layering of scopes namely domain, country, city and network. Every domain specific attribute has a set of supported values that can be defined at the country level, city level or at a network level. The list of supported values for each attribute can be listed on a public domain like a website or in the form or an API specific to a city or a network. For example, New Delhi supports a mode of travel called e-Rickshaws whereas Bangalore does not. So the list of supported modes in delhi or bangalore will be present as a file in the protocol specifications repository which anyone can access and implement. This list will continuously get updated as new modes keep coming along. We’ll see how these taxonomies get used in API calls when we look at the examples. 
-
+There is a particular nomenclature to these taxonomies which is constructed out of a hierarchical layering of scopes namely domain, country, city and network. Every domain specific attribute has a set of supported values that can be defined at the country level, city level or at a network level. The list of supported values for each attribute can be listed on a public domain like a website or in the form or an API specific to a city or a network. For example, New Delhi supports a mode of travel called e-Rickshaws whereas Bangalore does not. So the list of supported modes in delhi or bangalore will be present as a file in the protocol specifications repository which anyone can access and implement. This list will continuously get updated as new modes keep coming along. 
 
 ### Specification Evolution
 Lastly, let us look at the evolution of the specification. Beckn specification is represented as a set of documents which are continuously reviewed and updated. Since it is a community contributed protocol, the evolution of the specification is also dependent on the community. To enable that, the foundation has provided various channels to discuss and collaborate about various issues in the spec and finally release a draft version of the specification. This draft undergoes a set of peer reviews and is finally released as a new version. This new version will have a migration cycle which will be communicated to all implementers via github and slack channels and then the implementers can choose to migrate to the new version. The versioning scheme which is used is the semver 2.0.0. 
@@ -249,9 +223,7 @@ In the middle, we have the Beckn Gateways, which form the routing layer infra. T
 A Beckn Gateway (BG) refers to an organization which offers the following functionalities.
 
 1. It provides request routing from Beckn Apps to Beckn Providers and vice versa.
-2. It performs request optimization by filtering services based on intent.
-3. It validates and filters all requests with city policy
-4. It collects payments from the BA users, and settles it with the Beckn Providers through a clearing process
+2. It performs BAP request filtering by identifying BPPs based on context of the request
 
 #### What components does a BG include ?
 
