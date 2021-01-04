@@ -25,7 +25,8 @@ const config = {
 	},
 	"sidebar": {
 		"forcedNavOrder": [
-			"/",
+            "/",
+            "ReleaseHistory",
 			"Core",
 			"Mobility",
 			"Final Mile Delivery",
