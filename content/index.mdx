@@ -9,9 +9,9 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 
 ### Taking inspiration from the design of the internet
 
-Let’s take a quick look at the design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authority. All these systems are layered in a neat hourglass structure as shown on the right. 
+Let’s take a quick look at the design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate on the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authority. All these systems are layered in a neat hourglass structure as shown on the right. 
 
-![](/Images/design-of-the-internet.png)
+![](/Images/design-of-the-internet-2.png)
 
 Now that we have understood the design of our internet, let us look at what Beckn is. 
 
@@ -90,7 +90,10 @@ The foundation layer of a beckn network relies on the “Specification and Suppo
 
 ![](/Images/specification-building-blocks.png)
 
-The primary component of the specification and support  layer is the “Specification” component. It consists of 3 separate layers namely the API specification which defines the various APIs used in a commer transaction. The second layer consists of a set of schemas which are domain agnostic by definition. Basically these are reusable abstract schemas which represent various objects which are used in various commerce transactions. These objects can be further extended to domain specific objects using these taxonomies specific to each each domain. 
+The primary component of the specification and support  layer is the “Specification” component. It consists of 3 separate layers,
+1. The API specification layer which defines the various APIs used in a commerce transaction. 
+2. The Schema layer - This is the second layer which consists of a set of schemas which are domain agnostic by definition. Basically these are reusable abstract schemas which represent various objects which are used in various commerce transactions. 
+3. The Taxonomy layer - These contain domain specific objects 
 
 
 ### Order lifecycle
@@ -101,7 +104,7 @@ But before that, let us take a look at the lifecycle of a typical order. Every e
 
 Stage one is Discovery. This stage involves searching for a provider or a catalog. Once the catalog is retrieved, one can browse the catalog using various filters and params.
 
-Stage two is the Order stage, in this stage, the consumer constructs the order by selecting various items from a catalog, selecting offers; providing billing and shipping details and if necessary, the necessary customer credentials if required. A confirmed order marks the end of stage two.
+Stage two is the Order stage, in this stage, the consumer constructs the order by selecting various items from a catalog, selecting offers; providing billing and shipping details and if required, providing any supporting credentials. A confirmed order marks the end of stage two.
 
 Stage three is the fulfillment stage where the actual fulfillment of the order takes place. This consists of events like delivery, tracking and occasionally, cancellation. The completion of the delivery of an order marks the end of stage three.
 
@@ -297,25 +300,21 @@ The certification agencies might create multiple certificates like above to mana
 
 This layer consists of a network of open registries which store the details of every network participants. To get listed on a registry there is a rite of passage which every participant must go through as shown below. The various actors in the infrastructure layer are,
 
-###  Registry
-
-- Contains a database table containing a list of BAPs, BPPs, BGs or any other platform communicating on an open network  
-- It implements the subscribe API
 
 ### Network Registrar
 
-- A trusted entity which hosts the Registry
+- A trusted entity which maintains the Registry of participants on a network
 - It can be formed by the participants of a network or a public authority depending on the network 
 
 ### Registrant
 
-- Any company who wants its platform to be listed on a open Registry is called a Registrant
-- To be listed he registrant needs to submit relevant “Cred” to the Network Registrar
+- Any company who wants its platform to be listed on the Registry is called a Registrant
+- To be listed he registrant needs to submit relevant credentials to the Network Registrar
 - A Registrant can be a BAP, BPP or BG
 
 ### Subscriber
 
-- Once the platform gets approved by the registrar, it gets listed on the registry with the status as “INITIATED”
+- Once the platform gets approved by the Registrar, it gets listed on the registry with the status as “INITIATED”
 - A platform which gets approved and added to the registry by the Network Registrar becomes is called a Subscriber
 - Implements the on_subscribe API
 
