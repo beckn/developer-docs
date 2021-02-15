@@ -8,9 +8,9 @@ metaDescription: "Documentation for developers of the Beckn Ecosystem"
 
 This specification is an extenstion of the Beckn Core Specification for the Final Mile Delivery Domain.
 
-# Current Schema Version - 0.7.0
+# Current Schema Version - 0.8.3
 
-The current version of the beckn-final mile delivery Schema is 0.7.0. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
+The current version of the beckn-final mile delivery Schema is 0.8.3. This specification uses the [Semantic Versioning Scheme version 2.0](https://semver.org/spec/v2.0.0.html)
 
 # Maintainers
 
@@ -23,7 +23,18 @@ The current maintainers of the Beckn - Final Mile Delivery protocol are listed b
 
 # Contributors
 
-## Version 0.7.0 (Latest)
+## Version 0.8.3
+
+| Name            | Organization | Email                          |
+|-----------------|--------------|--------------------------------|
+| Peter           | ShopX        | peter@shopx.in                 |
+| Rahul Ranjan    | Micelio      | rahulr@micelio.com             |
+| Ravi Prakash    | Beckn        | ravi@beckn.org                 |
+| Suresh          | Peppo        | suresh.unnikrishnan@getwalk.in |
+| Thejesh         | Peppo        | thej@peppo.in                  |
+| Vidya Shankar M | Micelio      | vidyashankar.m@micelio.com     |
+
+## Version 0.7.0
 
 | Name            | Organization | Email                          |
 |-----------------|--------------|--------------------------------|
