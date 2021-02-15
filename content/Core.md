@@ -24,7 +24,7 @@ The current maintainers of the beckn protocol are listed below
 
 # Contributors
 
-## Version 0.9.0
+## Version 0.9.0 (Latest)
 
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
@@ -40,7 +40,7 @@ The current maintainers of the beckn protocol are listed below
 | Sujith Nair         | [Beckn Foundation](https://beckn.org)           | sujith@beckn.org       |
 | Pramod Varma        | [Beckn Foundation](https://beckn.org)           | pramod@beckn.org       |
 
-## Version 0.7.1 (Latest)
+## Version 0.7.1
 
 | Name                | Organization                                    | Email                  |
 |---------------------|-------------------------------------------------|------------------------|
