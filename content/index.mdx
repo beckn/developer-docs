@@ -225,10 +225,13 @@ In the middle, we have the Beckn Gateways, which form the routing layer infra. T
 
 A Beckn Gateway (BG) refers to an organization which offers the following functionalities.
 
-1. It provides request routing from Beckn Apps to Beckn Providers and vice versa.
+1. It provides search request routing from Beckn Apps to Beckn Providers and vice versa. The search packet only contains search parameters and does not carry any customer information. The Beckn Gateway has no knowledge of the end customer.
+
 2. It performs BAP request filtering by identifying BPPs based on context of the request
 
 The purpose of a BG is to allow all BPPs in a network to have a fair chance to be discovered by any BAP. The BG will be expected to broadcast the search request to all listed and active BPPs on the network registry to enable fair and equal access to any participant. Furthermore, the post discovery lifecycle exists driectly between the BAP and BPP once the BAP has chosen which BPP to go with to fulfill the BAPs intent.
+
+
 
 #### What components does a BG include ?
 
