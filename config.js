@@ -28,10 +28,9 @@ const config = {
             "/",
             "ReleaseHistory",
 			"Core",
-			"Mobility",
-			"Final Mile Delivery",
-			"Food And Beverage",
-			"Healthcare"
+			"Core/Transaction Layer Specification",
+			"Core/Infrastructure Layer Specification",
+			"Mobility"
 		],
 		"links": [
 			{ "text": "Code of sharing", "link": "https://beckn.org/code-of-sharing/" },
