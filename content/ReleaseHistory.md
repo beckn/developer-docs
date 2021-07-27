@@ -8,6 +8,8 @@ metaDescription: "Release history of beckn protocol"
 
 | Domain                                                                     | Version   |    Release Date           |
 |----------------------------------------------------------------------------|-----------|---------------------------|
+| [Core](/Core/01_Transaction%20Layer%20Specification/01_Latest)   |  0.9.2    |    27 July, 2021      |
+| [Mobility](/Mobility)   |  0.9.2    |    27 July, 2021      |
 | [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.1    |    15 November, 2020      |
 | [Core](https://github.com/beckn/protocol-specifications/tree/core-0.9.0)   |  0.9.0    |    02 November, 2020      |
 | [Local Retail](https://github.com/beckn/protocol-specifications/tree/fd154368c4670218ce6ad0fc8ee4ada5c401b485/final-mile-delivery/v0)   |  0.1.0  |    15 October, 2020      |
