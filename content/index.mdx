@@ -171,7 +171,7 @@ The BAP or Beckn App Platform is a server side infrastructure which captures con
 
 ![](/Images/BecknApp.png)
 
-BAPs are software application providers who intend to offer integrated services to the consumer. This refers to any software platform which has a consumer interface. Possible examples of BA User Interfaces are,
+BAPs are software application providers who intend to offer integrated services to the consumer. This refers to any software platform which has a consumer interface. Possible examples of BAP User Interfaces are,
 
 1. Mobile apps
 2. Desktop application
@@ -182,7 +182,7 @@ BAPs are software application providers who intend to offer integrated services 
 7. Chat-bots
 8. SDKs
 
-#### What components does a BA include ?
+#### What components does a BAP include ?
 A Beckn App includes,
 
 1. An API to interface with the Beckn Gateway as part of the application cloud. This API will henceforth be referred to as the **Beckn App API**.
@@ -237,7 +237,7 @@ The response message will be in the form of a callback. Each callback should als
 
 All messages exchanged will be serialised in JSON.
 
-Exception: Real time tracking data will not be routed through the Beckn Networks. As tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BP and the BA like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
+Exception: Real time tracking data will not be routed through the Beckn Networks. As tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BPP and the BAP like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
 
 ![](/Images/api-communication.png)
 
