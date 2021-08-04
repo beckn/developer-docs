@@ -9,7 +9,7 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 
 ### Taking inspiration from the design of the internet
 
-Let’s take a quick look at the design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate on the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authority. All these systems are layered in a neat hourglass structure as shown on the right. 
+Let’s take a quick look at the design of or very own “internet”. This is an important section because, we will be drawing analogies from this design to explain how beckn works. As you can see from the icons on the left, the internet is a collection of technologies, standards, applications which constitute what is known as a protocol stack, or in this case the TCP/IP protocol stack. Anyone wishing to communicate on the internet must implement this protocol stack OR use existing implementations to access this network. But implementing the stack alone is not enough. One requires a “plug point” to “plug in” to the internet. That plug point is provided to the implementer via a public digital infrastructure provided by various agencies. Those agencies are commonly known as ISPs or Internet Service Providers. Anyone wishing to access the internet can only gain access via one of these ISPs. Anyone wishing to be discovered on the internet needs to obtain addresses via the ISP. Sometimes, the addresses are also obtained from cloud service providers or CSPs. Anyone wishing to be uniquely identified on the internet need to obtain a domain names via the DNS infrastructure. To prove their trustworthiness, one needs to obtain an SSL Certificate from a certificate authority. 
 
 ![](/Images/design-of-the-internet-2.png)
 
@@ -24,13 +24,13 @@ Beckn is a similar set of “open” specifications that allow creation of “op
 
 With the advent of 5G and high speed network technologies, the time is right to move commerce from the application layer to the network and/or transport layer. Furthermore, there are attempts being made to implement beckn specifications in the middleware or firmware in some domains.
 
-**Beckn** is an open protocol that allows location-aware, local commerce across industries to be discovered and engaged by any consumer application. It helps businesses co-create solutions for the masses seamlessly, by combining services of any form or provider.
+**Beckn** is an open protocol that allows businesses to be discovered and engaged by any consumer application. It helps businesses co-create solutions for the masses seamlessly, by combining services of any form or provider.
 
-**Beckn Protocol** is a collection of open specifications consisting of protocol APIs, message formats, network design and reference algorithms to allow multiple commercial service provider entities to bring their services together to offer one seamless integrated experience to their customers. The interoperability protocol essentially allows two entities in an integrated ecosystem to communicate with each other through structured flows and role definitions.
+**Beckn Protocol** is a collection of open specifications consisting of protocol APIs, message formats, network topologies and reference architectures to allow multiple commercial service provider entities to bring their services together to offer one seamless integrated experience to their customers. The interoperability protocol essentially allows two entities in an integrated ecosystem to communicate with each other through structured flows and role definitions.
 
-The server-to-server communication protocol allows any consumer facing online platform to discover and transact with location-aware remote services with minimal implementation overhead. A single message packet generated at run-time, hence, could contain services from multiple providers.
+The server-to-server communication protocol allows any consumer facing online platform to discover and transact with remote services with minimal implementation overhead. A single message packet generated at run-time, hence, could contain services from multiple providers.
 
-Beckn Protocol decouples the demand side digital infrastructure in the form of apps and other channels from the supply side service provisioning infrastructure. It does this by making integrated location-aware services available not just on a single platform but potentially on any online consumer interface, (online maps, messaging, wallets, voice assistant apps and devices) that have mainstream adoption in a city.
+Beckn Protocol decouples the demand side digital infrastructure in the form of apps and other channels from the supply side service provisioning infrastructure. It does this by making integrated services available not just on a single platform but potentially on any online consumer interface, (online maps, messaging, wallets, voice assistant apps and devices) that have mainstream adoption in a city.
 
 Beckn is a protocol, not a platform. It adopts a decentralized architecture that obviates the need for creating a centralised platform in order to integrate services from multiple providers simultaneously ensuring privacy and security by design by enabling secure, privacy protected iteractions.
 
@@ -46,14 +46,14 @@ Some of these layers have already been designed and implemented across various n
 <center style="font-size:10px">*Under development or in draft stage</center>
 
 ## Reference Architecture
-In this section we will be looking into the architecture of the beckn ecosystem and the various building blocks that make up this architecture. 
+This section explains the architecture of the beckn ecosystem and the various building blocks that make up the ecosystem. 
 
 
 ![](/Images/reference-architecture.png)
 
 This diagram shows the architecture of beckn. As you can see, there are multiple layers stacked on top of each other each with clearly defined roles and functions.
 
-Every entity that wants to be part of the network will find a place in one or more of the layers you see in front of you.
+Every entity that wants to be part of the network will find a place in one or more of the layers in the above illustration.
 
 The bottom two layers are the *Specification & Support* and the *Certification* layers which provides all the resources and support required to implement the network, test for compliance and get certified to join a network.
 
@@ -93,12 +93,12 @@ The foundation layer of a beckn network relies on the “Specification and Suppo
 The primary component of the specification and support  layer is the “Specification” component. It consists of 3 separate layers,
 1. The API specification layer which defines the various APIs used in a commerce transaction. 
 2. The Schema layer - This is the second layer which consists of a set of schemas which are domain agnostic by definition. Basically these are reusable abstract schemas which represent various objects which are used in various commerce transactions. 
-3. The Taxonomy layer - These contain domain specific objects 
+3. The Taxonomy layer - These contain rules that are specific to a combination of domain, region and implementation scope
 
 
 ### Order lifecycle
 
-But before that, let us take a look at the lifecycle of a typical order. Every end-to-end commerce transaction can be categorised into four stages.
+Every end-to-end commerce transaction can be categorised into four stages.
 
 ![](/Images/order-lifecycle.png)
 
@@ -110,23 +110,23 @@ Stage three is the fulfillment stage where the actual fulfillment of the order t
 
 The fourth stage is the post-fulfillment stage where activities like providing rating, contacting support or initiating a return happen. 
 
-Each of these stages contain one or more APIs representing individual events. Let’s take a look at them.
+Each of these stages contain one or more APIs representing individual events.
 
 ### Transaction APIs
 
 ![](/Images/transaction-apis.png)
 
-As mentioned earlier, every stage of the order lifecycle is completed using one or more APIs. Now the interesting thing to note is that while these APIs are transport layer agnostic APIs. Meaning, that they are not specific to HTTP as a transport protocol.  They can just as easily be implemented using any other protocol like UDP, Websockets etc. But, since HTTP is more popular among the transport protocols, we will be using HTTP to describe our examples. Another important point to note is that these APIs are Server to Server APIs; meaning that these APIs are not directly called by a UI client like a mobile phone, browser, smart devices etc. This gives enormous flexibility to the implementer to customize his experience in however way he wants it to be. For example, a single search request from a mobile app to a server might result in multiple API calls from the server to the network. We will look into these use cases as we go along.
+As mentioned earlier, every stage of the order lifecycle is completed using one or more APIs. The interesting thing to note is that while these APIs are transport agnostic APIs. Meaning, that they are not specific to HTTP as a transport protocol.  They can just as easily be implemented using any other protocol like UDP, Websockets etc. But, since HTTP is more popular among the transport protocols, we will be using HTTP to describe our examples. Another important point to note is that these APIs are Server to Server APIs; meaning that these APIs are not directly called by a UI client like a mobile phone, browser, smart devices etc. This gives enormous flexibility to the implementer to customize his experience in however way he wants it to be. For example, a single search request from a mobile app to a server might result in multiple API calls from the server to the network. We will look into these use cases as we go along.
 
-There is one more very important thing to observe here is that each API interaction along this funnel is asynchronous. Meaning, every request is not followed by an immediate response in the same session. In fact, a response may take even days to after the request was generated. For example, when you’re booking a hotel during peak season, a booking request doesn’t necessarily mean that your hotel has confirmed the booking. It may take upto 24 hours for the confirmation to happen. Hence the async nature of these APIs. In fact if you really think about it, all real world transactions between one or more parties are actually asynchronous. Even talking for example, a person talking to another person still waits for a feedback or an acknowledgement from the other person at the end of a sentence. In the same way, every request is immediately responded to with an ACK and then the receiver will call back the requester with an appropriate response. 
+There is one more very important thing to observe here is that each API interaction along this funnel is asynchronous. Meaning, every request is not followed by an immediate response in the same session. In fact, a response may take even days to after the request was generated. For example, when you’re booking a hotel during peak season, a booking request doesn’t necessarily mean that your hotel has confirmed the booking. It may take upto 24 hours for the confirmation to happen. Hence the async nature of these APIs. In fact, all real world transactions between one or more parties are actually asynchronous. Even talking for example, a person talking to another person still waits for a feedback or an acknowledgement from the other person at the end of a sentence. In the same way, every request is immediately responded to with an ACK and then the receiver will call back the requester with an appropriate response. 
 
-So, these APIs emulate a typical order funnel i.e from search to confirm to track to rating. One last point before we move on is that these APIs don’t necessarily need to be called in order every time. I mean that there are use cases where one may call the confirm API directly without going through the search, select and init.
+So, these APIs emulate a typical order funnel i.e from search to confirm to track to rating. These APIs don’t necessarily need to be called in order every time. There are use cases where one may call the confirm API directly without going through the search, select and init.
 
 ### Support APIs
 
 ![](/Images/supporting-apis.png)
 
-Apart from the transaction APIs, there are also some supporting APIs which don’t necessarily need to be called every time. These data returned in these APIs are generally meant to be cached by the requester. Furthermore, some of these APIs are synchronous APIs, meaning that they don’t have a callback mechanism. These APIs generally get their response immediately in the same session.
+Apart from the transaction APIs, there are also some supporting APIs which don’t necessarily need to be called every time. The data returned in these APIs are generally meant to be cached by the requester. Furthermore, some of these APIs are synchronous APIs, meaning that they don’t have a callback mechanism. These APIs generally get their response immediately in the same session.
 
 ### Core Schema
 Now that we know what type of interactions happen between platforms on the network, let us look into how the data is structured in these interactions. The definition of these objects are represented in a structured schema for documentation and validation purposes using the Open API Specification 3.0.
@@ -139,7 +139,7 @@ The last two layers represent the primitive data-types and universal standards w
 
 
 ### Taxonomies
-Now it is obvious that all use cases cannot be represented using just abstracted objects. There has to be some domain level context to each of these objects which define the actual function of these objects. That variance across domains is defined using taxonomies. These define domain specific attributes to core schema elements. 
+It is obvious that all use cases cannot be represented using just abstracted objects. There has to be some domain level context to each of these objects which define the actual function of these objects. That variance across domains is defined using taxonomies. These define domain specific attributes to core schema elements. 
 
 ![](/Images/taxonomies.png)
 
@@ -156,7 +156,7 @@ Lastly, let us look at the evolution of the specification. Beckn specification i
 
 Before we look at the certification and infrastructure layers, let us take a look at the network layer where all the transactions happen. As you can see the network layer is itself composed of three separate layers namely, 
 
-The demand layer -  containing consumer facing platforms called BAPs or Beckn App Platforms.
+The demand layer -  containing consumer facing platforms called BAPs or Beckn App Platforms.One last point before we move on is that t
 
 The routing layer which consist of Beckn Gateways or BGs and,
 
@@ -171,7 +171,7 @@ The BAP or Beckn App Platform is a server side infrastructure which captures con
 
 ![](/Images/BecknApp.png)
 
-Beckn Apps are software application providers who intend to offer integrated services to the consumer. This refers to any software platform which has a consumer interface. Possible examples of BA User Interfaces are,
+BAPs are software application providers who intend to offer integrated services to the consumer. This refers to any software platform which has a consumer interface. Possible examples of BAP User Interfaces are,
 
 1. Mobile apps
 2. Desktop application
@@ -182,18 +182,15 @@ Beckn Apps are software application providers who intend to offer integrated ser
 7. Chat-bots
 8. SDKs
 
-#### What components does a BA include ?
+#### What components does a BAP include ?
 A Beckn App includes,
 
 1. An API to interface with the Beckn Gateway as part of the application cloud. This API will henceforth be referred to as the **Beckn App API**.
 2. The consumer user interface
 3. The application cloud
 
-#### Who can set up a BA ?
-Any organization which intends to offer integrated, location-aware services to consumers.
-
-#### How to implement the Beckn App API ?
-The Beckn App API can be implemented using the specifications defined [here](/Core/API).
+#### Who can set up a BAP ?
+Any organization which intends to offer integrated services to consumers.
 
 ### Beckn Provider Platforms (BPP):
 On the other side of the network is the supply layer which consists of the BPP. This is the platform which implements the supply logic and represents it in the form of a Provider Catalog. The BPP can be a single provider with a Beckn API implementation or an aggregator of merchants depending upon the logic of implementation. 
@@ -206,15 +203,12 @@ A Beckn Provider includes,
 2. An application cloud to store inventory data
 3. An user interface for service personnel. This is optional and may not be required for all cases. For example, a bike rental might not require a user interface whereas a cab service may require a Driver app.
 
-#### Who can become a Beckn Provider ?
-Any organization who owns, operates or manages location-aware, capacity-limited and time-limited inventory of services can become a Beckn Provider. They may require to be registered with the city authorities and are regulated by them. Possible examples of BPs are,
+#### Who can become a BPP ?
+Any organization who owns, operates or manages capacity-limited and time-limited inventory of services can become a Beckn Provider. They may require to be registered with the city authorities and are regulated by them. Possible examples of BPs are,
 
 1. Mass transit companies like metro services, bus services, ride hailing services
 2. Restaurants
 3. Final-mile delivery services for food & grocery
-
-#### How to implement the Beckn Provider API ?
-The Beckn Provider API can be implemented using the specifications defined [here](/Core/API).
 
 ### Beckn Gateways (BG):
 In the middle, we have the Beckn Gateways, which form the routing layer infra. The BGs are extremely lean and stateless routing servers. The purpose of this layer is to route requests from the BAP to the BPP and from the BPP back to the BAP. The BG takes a request from the BAP, determines which BPPs does the message need to forwarded to and multicasts the message to the same. Apart from that, it can also implement optional features like payments, registry services and can also emit open data. The open data specification in beckn is currently under development and will be released in due course of time. 
@@ -225,27 +219,15 @@ In the middle, we have the Beckn Gateways, which form the routing layer infra. T
 
 A Beckn Gateway (BG) refers to an organization which offers the following functionalities.
 
-1. It provides request routing from Beckn Apps to Beckn Providers and vice versa.
+1. It provides search request routing from Beckn Apps to Beckn Providers and vice versa. The search packet only contains search parameters and does not carry any customer information. The Beckn Gateway has no knowledge of the end customer.
+
 2. It performs BAP request filtering by identifying BPPs based on context of the request
 
 The purpose of a BG is to allow all BPPs in a network to have a fair chance to be discovered by any BAP. The BG will be expected to broadcast the search request to all listed and active BPPs on the network registry to enable fair and equal access to any participant. Furthermore, the post discovery lifecycle exists driectly between the BAP and BPP once the BAP has chosen which BPP to go with to fulfill the BAPs intent.
 
-#### What components does a BG include ?
-
-A BG includes,
-
-1. A cloud infrastructure with services to implement the above functionalities
-2. An API to accept requests from Beckn Apps. This API will henceforth be known as the **Beckn Gateway-App API**.
-3. It validates and filters all requests based on local governance policies
-4. It can also optionally collect  payments from the BA users, and settle with Beckn Providers through a clearing process
-
 #### Who can setup the Beckn Gateway ?
 
 Any organization with infrastructure to provide the above functionalities preferably organizations who own infrastructure with high compute capability. This organization could be a regulated entity registered with the city authorities.
-
-#### How to implement the Beckn Gateway APIs ?
-
-The Beckn Gateway APIs can be implemented using the specifications defined [here](/Core/API).
 
 ### API Communication
 
@@ -255,7 +237,7 @@ The response message will be in the form of a callback. Each callback should als
 
 All messages exchanged will be serialised in JSON.
 
-Exception: Real time tracking data will not be routed through the Beckn Networks. As tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BP and the BA like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
+Exception: Real time tracking data will not be routed through the Beckn Networks. As tracking involves continuous streams of data via an open socket, it will not be routed through the BG. The same exception applies to any real-time communication between the BPP and the BAP like chat or cloud calling. In these cases, only the real-time data source information will be transmitted through the BG. For example, in the case of vehicle tracking, only the tracking URL will be transmitted via the BG and not the tracking data itself. More information on this will be discussed in upcoming sections.
 
 ![](/Images/api-communication.png)
 
@@ -320,7 +302,7 @@ This layer consists of a network of open registries which store the details of e
 - A platform which gets approved and added to the registry by the Network Registrar becomes is called a Subscriber
 - Implements the on_subscribe API
 
-![](/Images/subscription-process.png)
+![](/Images/subscription-process-2.png)
 
 Once the registration is complete, the registry makes an entry of the registrant in its database as shown below.
 
