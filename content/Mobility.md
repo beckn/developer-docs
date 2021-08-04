@@ -19,7 +19,20 @@ The current maintainers of the beckn protocol are listed below
 
 # Contributors
 
-## Version 0.7.1 (Latest)
+## Version 0.9.2 (Latest)
+
+### Release Date : July 27th, 2021 
+
+| Name                | Organization                           | Email                          |
+|---------------------|----------------------------------------|--------------------------------|
+| Ravi Prakash        | [Beckn Foundation](https://beckn.org)  | ravi@beckn.org                 |
+| Sujith Nair         | [Beckn Foundation](https://beckn.org)  | sujith@beckn.org               |
+| Nikith Shetty       | [Juspay](https://www.juspay.in/)       | nikith.shetty@juspay.in        |
+| Paul Kapustin       | [Juspay](https://www.juspay.in/)       | paul.kapustin@juspay.in        |
+| Vlad Zagvozdkin     | [Juspay](https://www.juspay.in/)       | vladislav.zagvozdkin@juspay.in |
+| Oleg Romashin       | [Juspay](https://www.juspay.in/)       | oleg.romashin@juspay.in        |
+
+## Version 0.7.1 
 
 ### Release Date : October 30th, 2019
 
