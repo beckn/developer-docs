@@ -8,4 +8,3 @@ metaDescription: "Documentation for developers of the Beckn ecosystem"
 API Spec for Beckn Gateway
 
 ## Version: 0.9.2
-
