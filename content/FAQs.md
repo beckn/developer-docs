@@ -46,7 +46,7 @@ To understand the governance of beckn protocol, read the document published [her
 
 ## If I find any issues in beckn protocol, how do I notify and correct it?
 
-If you discover an issue in the specification, you can report it [here](http://github.com/beckn/issues). But before that, please read [this](https://github.com/beckn/protocol-specifications/blob/master/CONTRIBUTION.md) document.
+If you discover an issue in the specification, you can report it [here](https://github.com/beckn/protocol-specifications/issues). But before that, please read [this](https://github.com/beckn/protocol-specifications/blob/master/CONTRIBUTION.md) document.
 
 ## If I want to include new features into the specification, what should I do?
 
